@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exam Checklist with Progress Bar and Goggins Motivation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    h2, h3 {
+        color: #555;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px; /* Reduced spacing for indented items */
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    label {
+      font-weight: normal; /* Reduced font weight for indented items */
+    }
+
+    .topic-heading > label {
+        font-weight: bold; /* Keep main topic headings bold */
+    }
+
+    .indented {
+        margin-left: 20px; /* Indent the subtopics and problems */
+    }
+
+    /* Fixed progress bar */
+    #progressBar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      z-index: 1000;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .progress-text {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .progress-bar-container {
+        flex-grow: 1; /* Allow the bar to take available space */
+        height: 20px;
+        background-color: #eee; /* Background for the progress bar track */
+        border-radius: 10px; /* Rounded corners */
+        overflow: hidden; /* Hide overflow of the fill */
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background-color: #ff4d4d;
+      width: 0%;
+      transition: width 0.3s ease;
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Hide audio elements visually */
+    audio {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔥 Fixed Progress Bar -->
+  <div id="progressBar">
+    <div class="progress-text">
+      🔥 Progress: <span id="progressPercent">0%</span>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+  </div>
+  <br>
+  <!-- Your Checklist -->
+  <h1>Exam Preparation Checklist</h1>
+
+  <h2>Laplace Transform</h2>
+  <ul>
+    <li class="topic-heading"><label>2.8 LAPLACE TRANSFORM OF INTEGRAL</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Definition and Formula for Transform of Integral</label></li>
+    <li class="topic-heading"><label>2.9 SOLVED PROBLEMS (Laplace Transform of Integral)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Problem I: Inverse transform of given functions (1)-(4)</label></li>
+    <li class="topic-heading"><label>2.12 SOLVED PROBLEMS (Unit Step Function and Transforms)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Problem I: Represent functions using unit step function and find transforms (1)-(3)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 7: Find the Fourier sine transform of f(x)</label></li>
+    <li class="topic-heading"><label>SBI STEP FUNCTION (HEAVISIDE FUNCTION)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Definition and Properties of Unit Step Function</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Laplace Transform of Unit Step Function</label></li>
+    <li class="topic-heading"><label>MCOND SHIFTING THEOREM (SHIFTING)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Statement and Formula of Second Shifting Theorem</label></li>
+    <li class="topic-heading"><label>14 SOLVED PROBLEMS (Related to Unit Step and Shifting)</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Problems (a)-(d) related to Unit Step and Shifting</label></li>
+     <li class="topic-heading"><label>CONVOLUTION THEOREM</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Definition of Convolution</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Convolution Theorem Statement and Formula</label></li>
+     <li class="topic-heading"><label>SOLVED PROBLEMS (Convolution)</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 1: Find the inverse transform using convolution theorem (s+as)</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 2: Find the inverse transform using convolution theorem (s²(s+a))</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 3: Find the inverse transform using convolution theorem ((e^s - e^-s)/s²+4)</label></li>
+       <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 4: Find the inverse transform using convolution theorem (e^-s / (s²+s+1))</label></li>
+        <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 5: Find the inverse transform using convolution theorem (e^-s / (s+2)²)</label></li>
+         <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 9: Find the inverse transform using convolution theorem (2πs / (s²+1)³)</label></li>
+          <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 10: Find the inverse transform using convolution theorem (w / (s²+w²))</label></li>
+           <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 11: Find the inverse transform using convolution theorem (240 / ((s+1)(s+25)))</label></li>
+            <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 12: Find the inverse transform using convolution theorem (1 / (s²(s-a)))</label></li>
+             <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 13: Find the inverse transform using convolution theorem (1 / ((s-a)s))</label></li>
+              <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 14: Find the inverse transform using convolution theorem (1 / (a²+w²)²)</label></li>
+               <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 15: Find the inverse transform using convolution theorem (5.5 / ((s+1.5)(s-4)))</label></li>
+                <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 16: Find the inverse transform using convolution theorem (40.5 / s)</label></li>
+                 <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 17: Find the inverse transform using convolution theorem (13.5 / s)</label></li>
+                 <li class="topic-heading"><label>EXERCISES (Laplace Transform)</label></li>
+                 <li class="indented"><input type="checkbox" class="topic-check"><label>Exercises 1-8 (Inverse Laplace Transform)</label></li>
+                 <li class="indented"><input type="checkbox" class="topic-check"><label>Exercises 9-10 (Inverse Laplace Transform using Convolution)</label></li>
+
+
+  </ul>
+
+  <h2>Fourier Transforms</h2>
+  <ul>
+    <li class="topic-heading"><label>4.1 FOURIER TRANSFORM</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Introduction and Definition of Fourier Transform</label></li>
+     <li class="topic-heading"><label>4.2 FOURIER INTEGRAL</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Definition of Fourier Integral</label></li>
+    <li class="topic-heading"><label>4.3 FOURIER COSINE INTEGRAL AND FOURIER SINE INTEGRAL</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Definition of Fourier Cosine Integral</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Definition of Fourier Sine Integral</label></li>
+    <li class="topic-heading"><label>4.4 FOURIER COSINE AND SINE TRANSFORM</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Definition of Fourier Cosine Transform and Inverse</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Definition of Fourier Sine Transform and Inverse</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Linearity Property of Fourier Cosine and Sine Transforms</label></li>
+    <li class="topic-heading"><label>5 SOLVED EXAMPLES (Fourier Transforms)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Example 1: f(x) = 1, if 0<x<1; -1, if 1<x<2; 0, if x>2 (Cosine Transform)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Example 2: f(x) = x, if 0<x<2; 0, if x>2 (Cosine Transform)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Example 3: f(x) = k, if 0<x<a; 0, if x>a (Cosine Transform)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Example 4: f(x) = x², if 0<x<1; 0, if x>1 (Cosine Transform)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Example 5: Find the Fourier cosine transform of e^(-x)</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Example 6: Find the Fourier sine transform of e^(-x)</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Example 7: Find the Fourier sine transform of x²</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 8: Find the Fourier cosine and sine transform of e^(-ax)</label></li>
+       <li class="indented"><input type="checkbox" class="topic-check"><label>Example 9: Find the Fourier cosine transform of sinx</label></li>
+        <li class="indented"><input type="checkbox" class="topic-check"><label>Example 10: Find the Fourier sine transform of sinx</label></li>
+         <li class="indented"><input type="checkbox" class="topic-check"><label>Example 11: Find the Fourier cosine transform of e^(-ax)</label></li>
+          <li class="indented"><input type="checkbox" class="topic-check"><label>Example 12: Find the Fourier sine transform of e^(-ax)</label></li>
+           <li class="indented"><input type="checkbox" class="topic-check"><label>Example 13: Find the Fourier sine transform of f(x) = e^(-x)</label></li>
+            <li class="indented"><input type="checkbox" class="topic-check"><label>Example 14: Find the Fourier cosine transform of xe^(-x²)</label></li>
+             <li class="indented"><input type="checkbox" class="topic-check"><label>Example 15: Find the Fourier transform of f(x) = 1-x, |x|<=1; 0, |x|>1</label></li>
+              <li class="indented"><input type="checkbox" class="topic-check"><label>Example 16: Find the Fourier transform of f(x) = 1, |x|<=a; 0, |x|>a</label></li>
+               <li class="indented"><input type="checkbox" class="topic-check"><label>Example 17: Find the Fourier transform of f(x) = e^(-a|x|)</label></li>
+                <li class="indented"><input type="checkbox" class="topic-check"><label>Example 18: Find the Fourier transform of f(x) = xe^(-a|x|)</label></li>
+                 <li class="indented"><input type="checkbox" class="topic-check"><label>Example 19: Find the Fourier transform of f(x) = e^(-ax) for x>0, 0 for x<0</label></li>
+                  <li class="indented"><input type="checkbox" class="topic-check"><label>Example 20: Find the Fourier transform of f(x) = e^(-|x|)</label></li>
+                   <li class="indented"><input type="checkbox" class="topic-check"><label>Example 21: Find the Fourier transform of f(x) = e^(-|x|)/|x|</label></li>
+                    <li class="indented"><input type="checkbox" class="topic-check"><label>Example 22: Find the Fourier transform of f(x) = x, if -1<x<1; 0, otherwise</label></li>
+                     <li class="indented"><input type="checkbox" class="topic-check"><label>Example 23: Find the Fourier transform of f(x) = e^x, if -a<x<a; 0, otherwise</label></li>
+                      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 24: Find the Fourier transform of f(x) = e^x, if x<0; 0, otherwise</label></li>
+
+
+                       <li class="topic-heading"><label>EXERCISES (Fourier Transforms)</label></li>
+                        <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 1: Find the Fourier transform of f(x) = a²-x², |x|<a; 0, |x|>=a</label></li>
+                         <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 2: Find the Fourier transform of f(x) = x, |x|<=a; 0, x>a</label></li>
+                          <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 3: Find the Fourier transform of f(x) = x, |x|<a; 0, x>a</label></li>
+                           <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 4: Find the Fourier transform of f(x) = 1, 0<x<a; 0, x>a</label></li>
+                           <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 5: Find the Fourier transform of f(x) = cosx, 0<x<1; 0, otherwise</label></li>
+                            <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 6: Find the Fourier transform of f(x) = sinx, |x|<=a; 0, x>a</label></li>
+                             <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 7: Show that e^(-x²) is self reciprocal</label></li>
+                              <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 8: Find the Fourier transform of f(x) = x, |x|<=a; 0, |x|>a</label></li>
+                               <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 9: Find the Fourier transform of f(x) = sinx, |x|<=a; 0, |x|>a</label></li>
+                                <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 10: Find the Fourier transform of f(x) = e^(-ax), a>0</label></li>
+                                <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 11: Show that e^(-|x|) is self reciprocal</label></li>
+                                 <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 12: Find the Fourier transform of f(x) = x e^(-x²)</label></li>
+                                  <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 13: Evaluate integral of xsin(2x)/(x²+16) using Fourier sine transform</label></li>
+                                   <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 14: Show that f(x)=xe^(-x²) is self reciprocal w.r.t. Fourier sine transform.</label></li>
+                                    <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 15: Find the Fourier transform of f(x) = 1-|x|, |x|<=1; 0, |x|>1 and also find Fourier inverse transform.</label></li>
+                                     <li class="indented"><input type="checkbox" class="topic-check"><label>Exercise 16: Find the Fourier transform of f(x) = 1, |x|<=a; 0, |x|>a and hence evaluate integral sinx/x dx.</label></li>
+  </ul>
+
+  <h2>Z-Transforms</h2>
+  <ul>
+    <li class="topic-heading"><label>5.1 INTRODUCTION (Z-Transforms)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>Introduction to Z-Transform</label></li>
+    <li class="topic-heading"><label>5.2 Z-TRANSFORMS</label></li>
+     <li class="indented"><input type="checkbox" class="topic-check"><label>Definition of Z-Transform and Inverse</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Region of Convergence</label></li>
+      <li class="topic-heading"><label>5.3 Z-TRANSFORM OF SOME STANDARD SEQUENCES</label></li>
+       <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=1, u_n=0 for n>=1</label></li>
+       <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=1 for n>=0</label></li>
+        <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=k</label></li>
+         <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=(-1)^n</label></li>
+         <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=a^n</label></li>
+          <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=e^(an)</label></li>
+           <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=a^n/n!</label></li>
+            <li class="indented"><input type="checkbox" class="topic-check"><label>Transform of u_n=n^p (p positive integer)</label></li>
+            <li class="topic-heading"><label>5.5 LINEARITY PROPERTY (Z-Transforms)</label></li>
+             <li class="indented"><input type="checkbox" class="topic-check"><label>Statement and Formula of Linearity Property</label></li>
+              <li class="topic-heading"><label>5.6 SOLVED PROBLEMS (Z-Transforms)</label></li>
+               <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 1: Find the Z-transform of (n+1)²</label></li>
+               <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 2: Find the Z-transform of Aa^n + Bb^n</label></li>
+               <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 3: Find the Z-transform of (cosθ+isinθ)^n</label></li>
+                <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 4: Find the Z-transform of 2n-3a^n</label></li>
+                <li class="topic-heading"><label>5.7 DAMPING RULE (CHANGE OF SCALE)</label></li>
+                 <li class="indented"><input type="checkbox" class="topic-check"><label>Statement and Formula of Damping Rule</label></li>
+                  <li class="topic-heading"><label>SOLVED PROBLEMS (More Z-Transforms)</label></li>
+                   <li class="indented"><input type="checkbox" class="topic-check"><label>Problems 1-4 (Find Z-transforms of sequences)</label></li>
+                    <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 5: Find the Z-transform of a sequence defined piecewise</label></li>
+                     <li class="indented"><input type="checkbox" class="topic-check"><label>Problem 6: Find the Z-transform of a sequence defined piecewise</label></li>
+
+  </ul>
+
+  <!-- Audio Elements (hidden) -->
+  <audio id="goggins_audio1" src="goggins_stayhard1.mp3" preload="auto"></audio>
+  <audio id="goggins_audio2" src="goggins_10percent.mp3" preload="auto"></audio>
+  <audio id="goggins_audio3" src="goggins_inyourself.mp3" preload="auto"></audio>
+  <audio id="goggins_audio4" src="goggins_dontcare.mp3" preload="auto"></audio>
+  <audio id="goggins_audio5" src="goggins_nomotherfucker.mp3" preload="auto"></audio>
+  <audio id="goggins_audio6" src="goggins_usefuel.mp3" preload="auto"></audio>
+
+
+  <script>
+    const checkboxes = document.querySelectorAll('.topic-check');
+    const progressBarFill = document.getElementById('progressBarFill');
+    const percentText = document.getElementById('progressPercent');
+
+    // Array of audio element IDs to rotate through
+    const audioElementIds = [
+        'goggins_audio1',
+        'goggins_audio2',
+        'goggins_audio3',
+        'goggins_audio4',
+        'goggins_audio5',
+        'goggins_audio6'
+    ];
+
+    let lastPlayedIndex = -1; // To avoid playing the exact same clip consecutively if possible
+
+    // Update progress and play audio
+    function updateProgressAndPlayAudio(event) {
+      let checked = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) checked++;
+      });
+      const total = checkboxes.length;
+      const percent = total === 0 ? 0 : Math.round((checked / total) * 100);
+      progressBarFill.style.width = percent + '%';
+      percentText.textContent = percent + '%';
+
+      // Play audio if the checkbox was just checked
+      if (event.target.checked) {
+        playRandomGogginsClip();
+      }
+    }
+
+    function playRandomGogginsClip() {
+        // Simple random selection
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * audioElementIds.length);
+        } while (randomIndex === lastPlayedIndex && audioElementIds.length > 1); // Avoid consecutive same clip if more than one exists
+
+        const audioIdToPlay = audioElementIds[randomIndex];
+        const audioElement = document.getElementById(audioIdToPlay);
+
+        if (audioElement) {
+            // Stop any currently playing audio before starting a new one
+            audioElementIds.forEach(id => {
+                const audio = document.getElementById(id);
+                if (audio && !audio.paused) {
+                    audio.pause();
+                    audio.currentTime = 0; // Reset to the beginning
+                }
+            });
+
+            // Play the selected clip
+            audioElement.currentTime = 0; // Ensure playback starts from the beginning
+            audioElement.play().catch(e => console.error("Audio playback error:", e)); // Add error handling
+            lastPlayedIndex = randomIndex; // Update the last played index
+        }
+    }
+
+
+    // Add event listeners
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', updateProgressAndPlayAudio);
+    });
+
+    // Initialize
+    updateProgressAndPlayAudio({ target: { checked: false } }); // Initial call without playing audio
+
+  </script>
+</body>
+</html>
