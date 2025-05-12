@@ -7,14 +7,17 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
       background-color: #f4f4f9;
+      /* Removed padding-top from body */
     }
 
     h1 {
       color: #333;
       text-align: center;
-      margin-top: 60px; /* Add space to clear fixed header */
+      /* margin-top will be set by JavaScript */
+      margin-bottom: 20px;
     }
 
     h2, h3 {
@@ -26,6 +29,7 @@
     ul {
       list-style-type: none;
       padding: 0;
+      margin: 0 20px; /* Add some horizontal margin to the list */
     }
 
     li {
@@ -57,7 +61,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 40px;
+      height: 40px; /* Keep height consistent */
       background-color: #fff;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: flex;
@@ -68,6 +72,7 @@
       font-size: 18px;
       font-weight: bold;
       border-bottom: 2px solid #ddd;
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
 
     .progress-text {
@@ -98,6 +103,11 @@
     audio {
         display: none;
     }
+
+    /* Add some padding to the bottom of the body to prevent content being hidden behind the footer area if you add one later */
+    body {
+        padding-bottom: 20px;
+    }
   </style>
 </head>
 <body>
@@ -111,9 +121,9 @@
         <div class="progress-bar-fill" id="progressBarFill"></div>
     </div>
   </div>
-  <br>
+
   <!-- Your Checklist -->
-  <h1>Exam Preparation Checklist</h1>
+  <h1 id="mainHeading">Exam Preparation Checklist</h1>
 
   <h2>Electrochemistry and Corrosion</h2>
   <ul>
@@ -189,8 +199,10 @@
     // Select ALL checkboxes to attach event listeners to
     const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
 
+    const progressBar = document.getElementById('progressBar'); // Get the progress bar element
     const progressBarFill = document.getElementById('progressBarFill');
     const gradeDisplay = document.getElementById('gradeDisplay');
+    const mainHeading = document.getElementById('mainHeading'); // Get the main heading element
 
     // Define the target total grade value
     const targetTotalGrade = 50;
@@ -215,35 +227,22 @@
 
     // Function to update progress and play audio
     function updateProgressAndPlayAudio(event) {
-      let currentGrade = 0;
+      let checkedCountableItems = 0;
       let totalCountableItems = 0;
 
-      // Iterate through all checkboxes to find the countable ones and calculate the grade
+      // Iterate through all checkboxes to find the countable ones and count checked ones
       allCheckboxes.forEach(cb => {
         if (shouldCountForGrade(cb)) {
             totalCountableItems++;
             if (cb.checked) {
-                // Calculate the value of each countable item
-                const itemValue = totalCountableItems === 0 ? 0 : targetTotalGrade / totalCountableItems;
-                // Note: This isn't perfectly accurate if items are unchecked,
-                // we need to calculate the value based on the total number of countable items first.
+                checkedCountableItems++;
             }
         }
       });
 
-      // Recalculate grade based on the total number of countable items
-       let checkedCountableItems = 0;
-       allCheckboxes.forEach(cb => {
-           if (shouldCountForGrade(cb)) {
-               if (cb.checked) {
-                   checkedCountableItems++;
-               }
-           }
-       });
-
-       const itemValue = totalCountableItems === 0 ? 0 : targetTotalGrade / totalCountableItems;
-       currentGrade = checkedCountableItems * itemValue;
-
+      // Calculate the value of each countable item
+      const itemValue = totalCountableItems === 0 ? 0 : targetTotalGrade / totalCountableItems;
+      const currentGrade = checkedCountableItems * itemValue;
 
       // Update the grade display (formatted to 2 decimal places)
       gradeDisplay.textContent = `${currentGrade.toFixed(2)} / ${targetTotalGrade.toFixed(2)}`;
@@ -283,6 +282,12 @@
             audioElement.play().catch(e => console.error("Audio playback error:", e)); // Add error handling
             lastPlayedIndex = randomIndex; // Update the last played index
         }
+        }
+
+    // Function to set the top margin of the main heading based on the progress bar height
+    function setMainHeadingMargin() {
+        const progressBarHeight = progressBar.offsetHeight; // Get the rendered height of the progress bar
+        mainHeading.style.marginTop = `${progressBarHeight + 20}px`; // Add the height plus a little extra space
     }
 
 
@@ -290,6 +295,12 @@
     allCheckboxes.forEach(cb => {
         cb.addEventListener('change', updateProgressAndPlayAudio);
     });
+
+    // Set the initial margin on page load
+    setMainHeadingMargin();
+
+    // Recalculate margin if the window is resized (in case the header height changes due to responsiveness, though unlikely with fixed height)
+    window.addEventListener('resize', setMainHeadingMargin);
 
 
     // Initial call to set the grade display and progress bar on load
