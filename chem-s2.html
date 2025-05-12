@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exam Checklist with Progress Bar and Goggins Motivation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-top: 60px; /* Add space to clear fixed header */
+    }
+
+    h2, h3 {
+        color: #555;
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px; /* Reduced spacing for indented items */
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+      vertical-align: middle; /* Vertical alignment for the checkbox */
+    }
+
+    label {
+      font-weight: normal; /* Reduced font weight for indented items */
+      vertical-align: middle; /* Align label text vertically with checkbox */
+      display: inline-block; /* Use inline-block to allow margin-left and better control if needed, but still inline flow */
+    }
+
+    .topic-heading > label {
+        font-weight: bold; /* Keep main topic headings bold */
+    }
+
+    .indented {
+        margin-left: 20px; /* Indent the subtopics and problems */
+    }
+
+    /* Fixed progress bar */
+    #progressBar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      z-index: 1000;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .progress-text {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    .progress-bar-container {
+        flex-grow: 1; /* Allow the bar to take available space */
+        height: 20px;
+        background-color: #eee; /* Background for the progress bar track */
+        border-radius: 10px; /* Rounded corners */
+        overflow: hidden; /* Hide overflow of the fill */
+        min-width: 50px; /* Ensure the bar has a minimum width */
+        margin-left: 10px; /* Add space between text and bar */
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background-color: #ff4d4d;
+      width: 0%;
+      transition: width 0.3s ease;
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Hide audio elements visually */
+    audio {
+        display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔥 Fixed Progress Bar -->
+  <div id="progressBar">
+    <div class="progress-text">
+      🔥 Grade: <span id="gradeDisplay">0.00 / 50.00</span>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+  </div>
+  <br>
+  <!-- Your Checklist -->
+  <h1>Exam Preparation Checklist</h1>
+
+  <h2>Electrochemistry and Corrosion</h2>
+  <ul>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>3.11 NERNST EQUATION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.11.1 APPLICATIONS OF NERNST EQUATION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.11.2 NUMERICALS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>3.12 PRIMARY AND SECONDARY CELLS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.12.1 PRIMARY CELLS (PRIMARY BATTERIES)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.12.2 SECONDARY CELLS (SECONDARY BATTERIES)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.12.3 LITHIUM ION BATTERY (LIB)</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>3.13 INTRODUCTION TO FUEL CELL</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>3.14 CORROSION</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>3.15 MECHANISM OF ELECTROCHEMICAL CORROSION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.15.1 MECHANISM OF IRON CORROSION</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>3.16 GALVANIC SERIES</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>3.17 CATHODIC PROTECTION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.17.1 SACRIFICIAL ANODIC PROTECTION METHOD</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>3.17.2 IMPRESSED CURRENT CATHODIC PROTECTION</label></li>
+  </ul>
+
+  <h2>Molecular Electronics</h2>
+  <ul>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>4.1. INTRODUCTION TO MOLECULAR ELECTRONICS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.2. CONDUCTING POLYMERS: INTRODUCTION</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.3. CONDUCTING POLYMERS: CLASSIFICATION</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.4. SYNTHESIS OF CONDUCTING POLYMERS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.5. POLYACETYLENE</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.6. POLYANILINE</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.7. POLYPYRROLE (PPY)</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.8. POLY(P-PHENYLENE)</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>4.9. ORGANIC LIGHT EMITTING DIODE (OLED)</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>4.9.1. INTRODUCTION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>4.9.2. CONSTRUCTION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>4.9.3. WORKING</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>4.9.4. ADVANTAGES</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>4.10. PHOTORESIST</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>4.11. INTRODUCTION TO MOLECULAR DEVICES BASED ON CONDUCTING POLYMERS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>4.11.1. FIELD-EFFECT TRANSISTOR BASED ON CONDUCTING POLYMERS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>4.11.2. BIO-SENSOR BASED ON CONDUCTING POLYMERS</label></li>
+  </ul>
+
+  <h2>Nanomaterials</h2>
+  <ul>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.1. INTRODUCTION</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.2. CLASSIFICATION OF NANOMATERIALS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.2.1. CLASSIFICATION OF NANOMATERIALS BASED ON DIMENSION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.2.2. CLASSIFICATION OF NANOMATERIALS BASED ON MATERIALS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.3. CHARACTERISTICS OF NANOMATERIALS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.4. SYNTHESIS OF NANOMATERIALS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.4.1. TOP-DOWN APPROACH OF SYNTHESIS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.4.2. BOTTOM-UP APPROACH OF SYNTHESIS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.5. METHODS OF PREPARATION OF NANOMATERIALS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.6. CHEMICAL METHODS OF PREPARATION OF NANOMATERIALS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.1. HYDROLYSIS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.1.1. SOL-GEL PROCESS</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.1.2. HYDROTHERMAL METHOD</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.2. REDUCTION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.2.1. CHEMICAL REDUCTION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.2.2. ELECTROCHEMICAL REDUCTION</label></li>
+    <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.3. CHEMICAL VAPOR DEPOSITION (CVD)</label></li>
+  </ul>
+
+  <!-- Audio Elements (hidden) -->
+  <audio id="goggins_audio1" src="goggins_stayhard1.mp3" preload="auto"></audio>
+  <audio id="goggins_audio2" src="goggins_10percent.mp3" preload="auto"></audio>
+  <audio id="goggins_audio3" src="goggins_inyourself.mp3" preload="auto"></audio>
+  <audio id="goggins_audio4" src="goggins_dontcare.mp3" preload="auto"></audio>
+  <audio id="goggins_audio5" src="goggins_nomotherfucker.mp3" preload="auto"></audio>
+  <audio id="goggins_audio6" src="goggins_usefuel.mp3" preload="auto"></audio>
+
+
+  <script>
+    // Select ALL checkboxes to attach event listeners to
+    const allCheckboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    const progressBarFill = document.getElementById('progressBarFill');
+    const gradeDisplay = document.getElementById('gradeDisplay');
+
+    // Define the target total grade value
+    const targetTotalGrade = 50;
+
+    // Array of audio element IDs to rotate through
+    const audioElementIds = [
+        'goggins_audio1',
+        'goggins_audio2',
+        'goggins_audio3',
+        'goggins_audio4',
+        'goggins_audio5',
+        'goggins_audio6'
+    ];
+
+    let lastPlayedIndex = -1; // To avoid playing the exact same clip consecutively if possible
+
+    // Function to determine if a checkbox should contribute to the grade score
+    function shouldCountForGrade(checkbox) {
+        // Check if the checkbox has the 'topic-check' class (these are the countable ones)
+        return checkbox.classList.contains('topic-check');
+    }
+
+    // Function to update progress and play audio
+    function updateProgressAndPlayAudio(event) {
+      let currentGrade = 0;
+      let totalCountableItems = 0;
+
+      // Iterate through all checkboxes to find the countable ones and calculate the grade
+      allCheckboxes.forEach(cb => {
+        if (shouldCountForGrade(cb)) {
+            totalCountableItems++;
+            if (cb.checked) {
+                // Calculate the value of each countable item
+                const itemValue = totalCountableItems === 0 ? 0 : targetTotalGrade / totalCountableItems;
+                // Note: This isn't perfectly accurate if items are unchecked,
+                // we need to calculate the value based on the total number of countable items first.
+            }
+        }
+      });
+
+      // Recalculate grade based on the total number of countable items
+       let checkedCountableItems = 0;
+       allCheckboxes.forEach(cb => {
+           if (shouldCountForGrade(cb)) {
+               if (cb.checked) {
+                   checkedCountableItems++;
+               }
+           }
+       });
+
+       const itemValue = totalCountableItems === 0 ? 0 : targetTotalGrade / totalCountableItems;
+       currentGrade = checkedCountableItems * itemValue;
+
+
+      // Update the grade display (formatted to 2 decimal places)
+      gradeDisplay.textContent = `${currentGrade.toFixed(2)} / ${targetTotalGrade.toFixed(2)}`;
+
+      // Update the progress bar fill based on percentage of countable items
+      const percent = totalCountableItems === 0 ? 0 : (checkedCountableItems / totalCountableItems) * 100;
+      progressBarFill.style.width = percent + '%';
+
+      // Play audio only if a countable checkbox was just checked
+      if (event.target && event.target.checked && shouldCountForGrade(event.target)) {
+        playRandomGogginsClip();
+      }
+    }
+
+    function playRandomGogginsClip() {
+        // Simple random selection
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * audioElementIds.length);
+        } while (randomIndex === lastPlayedIndex && audioElementIds.length > 1); // Avoid consecutive same clip if more than one exists
+
+        const audioIdToPlay = audioElementIds[randomIndex];
+        const audioElement = document.getElementById(audioIdToPlay);
+
+        if (audioElement) {
+            // Stop any currently playing audio before starting a new one
+            audioElementIds.forEach(id => {
+                const audio = document.getElementById(id);
+                if (audio && !audio.paused) {
+                    audio.pause();
+                    audio.currentTime = 0; // Reset to the beginning
+                }
+            });
+
+            // Play the selected clip
+            audioElement.currentTime = 0; // Ensure playback starts from the beginning
+            audioElement.play().catch(e => console.error("Audio playback error:", e)); // Add error handling
+            lastPlayedIndex = randomIndex; // Update the last played index
+        }
+    }
+
+
+    // Add event listeners to all checkboxes
+    allCheckboxes.forEach(cb => {
+        cb.addEventListener('change', updateProgressAndPlayAudio);
+    });
+
+
+    // Initial call to set the grade display and progress bar on load
+    // Passing a dummy event object to satisfy the function signature, but ensuring no audio plays
+    updateProgressAndPlayAudio({ target: { checked: false } });
+
+  </script>
+</body>
+</html>
