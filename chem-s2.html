@@ -10,7 +10,6 @@
       margin: 0; /* Remove default body margin */
       padding: 0; /* Remove default body padding */
       background-color: #f4f4f9;
-      /* Removed padding-top from body */
     }
 
     h1 {
@@ -175,7 +174,7 @@
     <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.4. SYNTHESIS OF NANOMATERIALS</label></li>
     <li class="indented"><input type="checkbox" class="topic-check"><label>5.4.1. TOP-DOWN APPROACH OF SYNTHESIS</label></li>
     <li class="indented"><input type="checkbox" class="topic-check"><label>5.4.2. BOTTOM-UP APPROACH OF SYNTHESIS</label></li>
-    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.5. METHODS OF PREPARATION OF NANOMATERIALS</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>5.5. METHODS OF PREPARATION OF NANOMATERIALS</label></li>
     <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>5.6. CHEMICAL METHODS OF PREPARATION OF NANOMATERIALS</label></li>
     <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.1. HYDROLYSIS</label></li>
     <li class="indented"><input type="checkbox" class="topic-check"><label>5.6.1.1. SOL-GEL PROCESS</label></li>
@@ -221,8 +220,37 @@
 
     // Function to determine if a checkbox should contribute to the grade score
     function shouldCountForGrade(checkbox) {
-        // Check if the checkbox has the 'topic-check' class (these are the countable ones)
-        return checkbox.classList.contains('topic-check');
+        const parentLi = checkbox.closest('li');
+        if (!parentLi) return false;
+
+        // If it has the 'topic-check' class, always count it
+        if (checkbox.classList.contains('topic-check')) {
+            return true;
+        }
+
+        // If it's a topic-heading item with the 'topic-heading-check' class,
+        // and it *does not* have any following indented items, count it.
+        // Note: This part is now slightly redundant if we use the topic-check class correctly,
+        // but it's good to have the explicit check based on the parent li structure.
+        if (parentLi.classList.contains('topic-heading') && checkbox.classList.contains('topic-heading-check')) {
+             let hasIndentedSibling = false;
+             let nextSibling = parentLi.nextElementSibling;
+             while (nextSibling) {
+                 if (nextSibling.classList.contains('indented')) {
+                     hasIndentedSibling = true;
+                     break; // Found an indented sibling
+                 }
+                 // If we hit another topic-heading before finding an indented sibling, stop checking
+                 if (nextSibling.classList.contains('topic-heading')) {
+                      break;
+                  }
+                 nextSibling = nextSibling.nextElementSibling;
+             }
+             // If the topic-heading does NOT have any indented siblings, count it
+             return !hasIndentedSibling;
+        }
+
+        return false; // Default case: not counted
     }
 
     // Function to update progress and play audio
