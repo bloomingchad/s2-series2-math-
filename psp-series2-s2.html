@@ -53,6 +53,10 @@
     .indented {
         margin-left: 20px; /* Indent the subtopics and problems */
     }
+    .sub-indented {
+        margin-left: 40px; /* Further indent for sub-subtopics */
+    }
+
 
     /* Fixed progress bar */
     #progressBar {
@@ -122,42 +126,121 @@
   </div>
 
   <!-- Your Checklist -->
-  <h1 id="mainHeading">Exam Preparation Checklist</h1>
+  <h1 id="mainHeading">24ESP204 Problem Solving and Programming</h1>
 
-  <h2>MODULE III: Arrays and strings (7 hours)</h2>
+  <h2>MODULE III : Strings</h2>
   <ul>
-    <li class="topic-heading"><input type="checkbox" id="check-3.1" class="topic-check"><label for="check-3.1">String processing</label></li>
-    <li class="indented"><input type="checkbox" id="check-3.1.1" class="topic-check"><label for="check-3.1.1">In built String handling functions (strlen, strcpy, strcat and strcmp, puts, gets)</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-3.2" class="topic-check"><label for="check-3.2">Linear search program</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-3.3" class="topic-check"><label for="check-3.3">Bubble sort program</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-3.4" class="topic-check"><label for="check-3.4">Simple programs covering arrays and strings</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>String processing</label></li>
+      <li class="indented topic-heading"><input type="checkbox" class="topic-heading-check"><label>Inbuilt String handling functions</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>strlen (String Length)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>strcpy (String Copy)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>strcat (String Concatenation)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>strcmp (String Comparison)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>puts, gets functions</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>Simple programs covering strings</label></li>
   </ul>
 
-  <h2>MODULE IV: Working with functions (7 hours)</h2>
+  <h2>MODULE IV : Working with functions</h2>
   <ul>
-    <li class="topic-heading"><input type="checkbox" id="check-4.1" class="topic-check"><label for="check-4.1">Introduction to modular programming</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.2" class="topic-check"><label for="check-4.2">Writing functions</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.3" class="topic-check"><label for="check-4.3">Formal parameters</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.4" class="topic-check"><label for="check-4.4">Actual parameters</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.5" class="topic-check"><label for="check-4.5">Pass by Value</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.6" class="topic-check"><label for="check-4.6">Recursion</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.7" class="topic-check"><label for="check-4.7">Arrays as Function Parameters</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.8" class="topic-check"><label for="check-4.8">Structure</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.9" class="topic-check"><label for="check-4.9">Union</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.10" class="topic-check"><label for="check-4.10">Storage Classes</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.11" class="topic-check"><label for="check-4.11">Scope and life time of variables</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-4.12" class="topic-check"><label for="check-4.12">Simple programs using functions</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Modular Programming & Basic Function Concepts</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Introduction to modular programming</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Writing functions: Declaration, Definition, Calling</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Formal parameters vs. Actual parameters</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Parameter Passing Techniques</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Pass by Value: Concept & Effect (no change to original variables)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Pass by Value: Example (e.g., `void modify(int x)`) </label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Pass by Reference (using pointers): Concept & Effect (changes original variable)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Pass by Reference: Example (e.g., `void modify(int *x)`) </label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Swapping two numbers using Pass by Reference</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Why use Pass by Reference: Modifying originals, Simulating return of multiple values, Memory efficiency with large data</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Arrays as Function Parameters</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Concept: Arrays always passed by reference (address of first element)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Syntax for functions taking arrays: `void func(int arr[], int size)` OR `void func(int *arr, int size)`</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Printing array elements using a function</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Modifying array elements inside a function</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Sum of array elements using a function</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Key Points: Implicit by-reference nature, Importance of size parameter, Ability to modify original array</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>User-defined Data Types: Structures</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Definition and Purpose: Grouping different data types</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Syntax: Declaring a structure (`struct TagName { members; };`)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Creating structure variables (e.g., `struct TagName varName;`)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Accessing structure members (dot operator `.`)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Structure initialized directly in code</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Structure members initialized using `scanf`</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Array of structures</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Practice: Problems involving structures (e.g., Book, Employee, Date examples)</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>User-defined Data Types: Unions</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Definition and Purpose: Shared memory location for members</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Syntax: Declaring a union (`union TagName { members; };`)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Accessing union members & understanding data overwriting</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Structure vs. Union: Key Differences (Memory allocation, Member access, Usage scenarios)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>When are Unions Beneficial? (Memory saving, when only one member is active at a time)</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Recursion</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Concept of Recursion: Function calling itself</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Essential components: Base case and Recursive step</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Simple programs using recursion (e.g., factorial, Fibonacci sequence - understand logic)</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Storage Classes, Scope, and Lifetime of Variables</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Introduction: How storage classes define scope, lifetime, visibility, and initial value</label></li>
+      <li class="topic-heading indented"><input type="checkbox" class="topic-heading-check"><label>Automatic (auto)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Scope: Local (block/function)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Lifetime: Exists only while block/function is active</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Default storage class for local variables, initial value is garbage</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Example and Explanation</label></li>
+      <li class="topic-heading indented"><input type="checkbox" class="topic-heading-check"><label>External (extern)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Scope: Global (available across multiple files if declared)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Lifetime: Exists throughout program execution, initial value 0</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Usage: Declaring global variables defined elsewhere (or later in file)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Example and Explanation</label></li>
+      <li class="topic-heading indented"><input type="checkbox" class="topic-heading-check"><label>Static (static)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Static Local Variable: Scope (local to block/function), Lifetime (retains value between calls), initial value 0</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Static Local Variable: Example (e.g., counter function)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Static Global Variable: Scope (limited to the file where defined), Lifetime (program), initial value 0</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Static Global Variable: Example and Explanation</label></li>
+      <li class="topic-heading indented"><input type="checkbox" class="topic-heading-check"><label>Register (register)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Scope: Local (block/function)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Lifetime: Exists only while block/function is active, initial value garbage</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Hint to compiler to store in CPU register for faster access (not guaranteed)</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Cannot use address-of operator (`&`) on register variables</label></li>
+        <li class="sub-indented"><input type="checkbox" class="topic-check"><label>Example and Explanation</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Summary Table: Key differences (Scope, Lifetime, Initial Value, Storage)</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>Simple programs using various function concepts</label></li>
   </ul>
 
-  <h2>MODULE V: Pointers and Files (7 hours)</h2>
+  <h2>MODULE V : Pointers</h2>
   <ul>
-    <li class="topic-heading"><input type="checkbox" id="check-5.1" class="topic-check"><label for="check-5.1">Basics of Pointer</label></li>
-    <li class="indented"><input type="checkbox" id="check-5.1.1" class="topic-check"><label for="check-5.1.1">Declaring pointers</label></li>
-    <li class="indented"><input type="checkbox" id="check-5.1.2" class="topic-check"><label for="check-5.1.2">Accessing data though pointers</label></li>
-    <li class="indented"><input type="checkbox" id="check-5.1.3" class="topic-check"><label for="check-5.1.3">NULL pointer</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-5.2" class="topic-check"><label for="check-5.2">Array access using pointers</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-5.3" class="topic-check"><label for="check-5.3">Pass by reference effect</label></li>
-    <li class="topic-heading"><input type="checkbox" id="check-5.4" class="topic-check"><label for="check-5.4">Simple programs covering pointers</label></li>
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Fundamentals of Pointers</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>What is a Pointer? (Variable that stores the memory address of another variable)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Declaring a Pointer (e.g., `int *ptr; char *cptr;`)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Address-of Operator (`&`): Getting the memory address of a variable</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Dereferencing Operator (`*`): Accessing the value at the address stored in a pointer (Indirection)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Initializing a Pointer (e.g., `ptr = &variable;`)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>NULL Pointer: Concept, definition (`NULL` or `(void*)0`), and importance</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Pointer Operations and Examples</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 1: Basic Pointer Assignment and Dereferencing (int)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 2: Pointer to a Character</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 3: Modifying a variable's value using its pointer</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 4: Sum of two numbers using pointers</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Pointers and Arrays</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Concept: Array name acts as a constant pointer to its first element</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Pointer Arithmetic: Incrementing/decrementing pointers, adding/subtracting integers (scales by data type size)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Accessing array elements using pointer notation (e.g., `*(arr + i)`, `*(ptr + i)`) vs. array notation (`arr[i]`, `ptr[i]`) </label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 5: Pointers and Arrays - Accessing elements</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example 6: Pointer and Array Equivalence demonstration</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Traversing an array using a pointer</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-heading-check"><label>Pointers in Function Arguments (Pass by Reference)</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Revisiting Pass by Reference: How pointers enable functions to modify original argument values</label></li>
+      <li class="indented"><input type="checkbox" class="topic-check"><label>Example: Function that swaps two integers using pointers</label></li>
+
+    <li class="topic-heading"><input type="checkbox" class="topic-check"><label>Simple programs covering various pointer concepts and applications</label></li>
   </ul>
 
   <!-- Audio Elements (hidden) -->
@@ -195,15 +278,46 @@
 
     // Function to determine if a checkbox should contribute to the grade score
     function shouldCountForGrade(checkbox) {
-        return checkbox.classList.contains('topic-check');
+        const parentLi = checkbox.closest('li');
+        if (!parentLi) return false;
+
+        // Count any item with the 'topic-check' class
+        if (checkbox.classList.contains('topic-check')) {
+            return true;
+        }
+
+        // Do NOT count parent topic-heading-check items themselves if they have any indented children.
+        // The child items with 'topic-check' will be counted.
+        // This prevents double-counting.
+        // A standalone topic-heading-check item (with no indented items following) IS counted.
+        if (parentLi.classList.contains('topic-heading') && checkbox.classList.contains('topic-heading-check')) {
+             let hasIndentedSibling = false;
+             let nextSibling = parentLi.nextElementSibling;
+             while (nextSibling) {
+                 // Check for any indented sibling (either level) before another main topic heading
+                 if (nextSibling.classList.contains('indented') || nextSibling.classList.contains('sub-indented')) {
+                     hasIndentedSibling = true;
+                     break;
+                 }
+                 // Stop checking if we hit another main topic heading (not an indented one)
+                 if (nextSibling.classList.contains('topic-heading') && !nextSibling.classList.contains('indented') && !nextSibling.classList.contains('sub-indented')) {
+                      break;
+                  }
+                 nextSibling = nextSibling.nextElementSibling;
+             }
+             // If the topic-heading does NOT have any indented siblings, it counts.
+             return !hasIndentedSibling;
+        }
+
+        return false; // Default: not counted
     }
+
 
     // Function to update progress and play audio
     function updateProgressAndPlayAudio(event) {
       let checkedCountableItems = 0;
       let totalCountableItems = 0;
 
-      // Iterate through all checkboxes to find the countable ones and count checked ones
       allCheckboxes.forEach(cb => {
         if (shouldCountForGrade(cb)) {
             totalCountableItems++;
@@ -213,71 +327,53 @@
         }
       });
 
-      // Calculate the value of each countable item
       const itemValue = totalCountableItems === 0 ? 0 : targetTotalGrade / totalCountableItems;
       const currentGrade = checkedCountableItems * itemValue;
 
-      // Update the grade display (formatted to 2 decimal places)
       gradeDisplay.textContent = `${currentGrade.toFixed(2)} / ${targetTotalGrade.toFixed(2)}`;
 
-      // Update the progress bar fill based on percentage of countable items
       const percent = totalCountableItems === 0 ? 0 : (checkedCountableItems / totalCountableItems) * 100;
       progressBarFill.style.width = percent + '%';
 
-      // Play audio only if a countable checkbox was just checked
       if (event.target && event.target.checked && shouldCountForGrade(event.target)) {
         playRandomGogginsClip();
       }
     }
 
     function playRandomGogginsClip() {
-        // Simple random selection
         let randomIndex;
         do {
             randomIndex = Math.floor(Math.random() * audioElementIds.length);
-        } while (randomIndex === lastPlayedIndex && audioElementIds.length > 1); // Avoid consecutive same clip if more than one exists
+        } while (randomIndex === lastPlayedIndex && audioElementIds.length > 1);
 
         const audioIdToPlay = audioElementIds[randomIndex];
         const audioElement = document.getElementById(audioIdToPlay);
 
         if (audioElement) {
-            // Stop any currently playing audio before starting a new one
             audioElementIds.forEach(id => {
                 const audio = document.getElementById(id);
                 if (audio && !audio.paused) {
                     audio.pause();
-                    audio.currentTime = 0; // Reset to the beginning
+                    audio.currentTime = 0;
                 }
             });
-
-            // Play the selected clip
-            audioElement.currentTime = 0; // Ensure playback starts from the beginning
-            audioElement.play().catch(e => console.error("Audio playback error:", e)); // Add error handling
-            lastPlayedIndex = randomIndex; // Update the last played index
+            audioElement.currentTime = 0;
+            audioElement.play().catch(e => console.error("Audio playback error:", e));
+            lastPlayedIndex = randomIndex;
         }
     }
 
-    // Function to set the top margin of the main heading based on the progress bar height
     function setMainHeadingMargin() {
-        const progressBarHeight = progressBar.offsetHeight; // Get the rendered height of the progress bar
-        mainHeading.style.marginTop = `${progressBarHeight + 20}px`; // Add the height plus a little extra space
+        const progressBarHeight = progressBar.offsetHeight;
+        mainHeading.style.marginTop = `${progressBarHeight + 20}px`;
     }
 
-
-    // Add event listeners to all checkboxes
     allCheckboxes.forEach(cb => {
         cb.addEventListener('change', updateProgressAndPlayAudio);
     });
 
-    // Set the initial margin on page load
     setMainHeadingMargin();
-
-    // Recalculate margin if the window is resized (in case the header height changes due to responsiveness, though unlikely with fixed height)
     window.addEventListener('resize', setMainHeadingMargin);
-
-
-    // Initial call to set the grade display and progress bar on load
-    // Passing a dummy event object to satisfy the function signature, but ensuring no audio plays
     updateProgressAndPlayAudio({ target: { checked: false } });
 
   </script>
