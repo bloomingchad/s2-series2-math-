@@ -1,146 +1,171 @@
-## Module V: Yoga & Lifestyle - Harmony of Mind, Body, and Spirit 🧘✨
+## Module V: Yoga & Lifestyle - Cultivating Well-being 🧘🌿
 
-Yoga is more than just physical postures; it's a holistic discipline aimed at creating harmony between the mind, body, and spirit. Originating from the Sanskrit root 'Yuj' (meaning to join, yoke, or unite), yoga seeks to integrate these aspects into a cohesive whole, promoting healthy living. Its central methods include physical postures (Asanas), breathing techniques (Pranayama), and meditation.
+### 1. Meaning & Importance of Yoga
 
-### 1. The Essence and Paths of Yoga 🕉️
+*   **Meaning of Yoga:**
+    The word "Yoga" originates from the Sanskrit root "Yuj," which means "to join," "to yoke," or "to unite." Essentially, yoga is a discipline aimed at achieving a harmonious union of the body, mind, and spirit. It's an ancient Indian science and art of healthy living, focusing on bringing these different aspects of an individual into a balanced and integrated whole.
 
-*   **Core Purpose:** To bring body, mind, and spirit into a harmonious union.
-*   **Therapeutic Tool:** Modern research increasingly demonstrates yoga's effectiveness in managing various physical and mental conditions, including chronic pain, anxiety, depression, cardiovascular disease, and diabetes.
+*   **Importance of Yoga:**
+    Yoga holds significant importance for overall well-being in modern life:
+    *   **Physical Health:** Improves flexibility, strength, balance, and organ function. It can aid in managing and preventing various physical ailments.
+    *   **Mental Health:** Reduces stress, anxiety, and depression. It enhances mental clarity, focus, and emotional stability.
+    *   **Spiritual Growth:** Offers a path for self-realization, inner peace, and a deeper connection with oneself and the universe (depending on the individual's approach and depth of practice).
+    *   **Holistic Approach:** Addresses the individual as a whole, recognizing the interconnectedness of mind, body, and spirit, rather than treating them as separate entities.
+    *   **Stress Management:** Provides effective techniques to cope with the pressures of daily life.
+    *   **Improved Lifestyle:** Encourages mindful living, self-awareness, and healthier habits.
 
-*   **Traditional Paths of Yoga:** Yoga encompasses several traditional paths, each offering a unique approach to union:
-    *   **Bhakti Yoga:** The path of devotion and love.
-    *   **Karma Yoga:** The path of selfless action and service.
-    *   **Jnana Yoga:** The path of knowledge, wisdom, and self-study.
-    *   **Raja Yoga:** The path of self-discipline, mental control, and meditative practice (often associated with Ashtanga Yoga).
+### 2. Elements of Yoga
 
-*   **Defining Yoga:**
-    *   Wikipedia: "Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India."
-    *   Patanjali (in the Yoga Sutras): "Yoga is the practice of quieting the mind" (Yogas-chitta-vritti-nirodhah).
+While yoga is a vast field, some of its core elements, as often practiced and understood, include:
 
-### 2. Asanas: Postures for Health and Stillness 🤸‍♀️
+*   **Asanas (Postures):** Physical postures designed to improve flexibility, strength, balance, and overall physical health. They also prepare the body for meditation by cultivating stillness and stability.
+*   **Pranayama (Breath Control):** Techniques for regulating the breath (prana or life force). Pranayama aims to calm the nervous system, purify energy channels, increase vitality, and enhance mental focus.
+*   **Dhyana (Meditation):** Practices aimed at training attention and awareness to achieve a mentally clear and emotionally calm state. It involves focusing the mind on a particular object, thought, or activity.
+*   **Yogic Kriyas (Cleansing Techniques):** Specific purification practices designed to cleanse the internal organs and systems of the body, removing toxins and promoting health. Examples include Neti (nasal cleansing) and Kapalabhati (skull shining breath).
+*   **Yamas & Niyamas (Ethical Principles):** Moral and ethical guidelines for living a purposeful and harmonious life. Yamas are social ethics (e.g., non-violence, truthfulness), and Niyamas are personal observances (e.g., purity, contentment). (Though not explicitly asked for elaboration here, they are fundamental elements).
+*   **Relaxation:** Techniques like Savasana and Yoga Nidra, crucial for integrating the benefits of practice and reducing stress.
 
-Asana refers to a yoga pose or position, designed to cultivate mastery over the mind and body, enhancing overall health and function. Asanas are fundamental to yoga practice, building strength, endurance, and improving circulation, while also promoting the free flow of energy (prana). When performed correctly, they cleanse organs, expand joints and muscles.
+### 3. Introduction - Asanas, Pranayama, Meditation & Yogic Kriyas
 
-*   **Classification of Asanas (based on body position):**
-    *   **Standing Asanas (Balancing):** Cultivate stability and poise.
-        *   *Examples:* Vrikshasana (Tree Pose), Padahastasana (Hand to Foot Pose), Ardha Chakrasana (Half Wheel Pose).
-    *   **Forward Bending Asanas:** Promote calmness and introspection.
-    *   **Backward Bending Asanas:** Open the chest and energize the body.
-    *   **Kneeling Asanas:** Often used for stability and grounding.
-    *   **Sitting Asanas (Meditative Asanas):** Ideal for meditation and pranayama.
-        *   *Examples:* Vajrasana (Thunderbolt/Diamond Pose), Padmasana (Lotus Pose).
-    *   **Abdominal and Lumbar Asanas (Prone Line - Lying on stomach):** Strengthen the core and back.
-        *   *Examples:* Bhujangasana (Cobra Pose), Salabhasana (Locust Pose).
-    *   **Supine Asanas (Relaxative - Lying on back):** Promote relaxation and restoration.
-        *   *Examples:* Uttitha Padasana (Raised Legs Pose), Naukasana (Boat Pose), Savasana (Corpse Pose).
+*   **Asanas:** As discussed above, these are the physical postures that form a significant part of Hatha Yoga and other yoga styles. They range from simple seated poses to complex balancing and inverted postures. Each asana has specific benefits for the body and mind.
+*   **Pranayama:** This involves conscious control and extension of the breath. Different pranayama techniques have different effects – some are calming, some are energizing, and some are balancing.
+*   **Meditation (Dhyana):** A practice where an individual uses a technique – such as mindfulness, or focusing the mind on a particular object, thought, or activity – to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state.
+*   **Yogic Kriyas:** These are traditional yogic cleansing practices. They are considered important for preparing the body for deeper yogic practices by removing physical and energetic blockages. They often involve using water, air, or specific bodily manipulations.
 
-*   **Specific Asanas and Their Effects:**
+### 4. Yoga for Concentration & Related Asanas
 
-    *   **Vrikshasana (Tree Pose) - Standing/Balancing:**
-        *   *Description:* Mimics the stillness and rootedness of a tree. One leg supports the body like a trunk, while the arms and other leg extend like branches.
-        *   *Benefits:* Strengthens the spine, tendons, and ligaments of the feet; tones leg muscles; strengthens knees; improves hip flexibility; strengthens inner ears, eyes, and shoulders; beneficial for sciatica and flat feet; calms the mind, enhances body sturdiness and flexibility; boosts concentration and mental faculties; excellent for postural problems.
+Yoga significantly enhances concentration and focus by calming the mind, improving awareness, and strengthening the nervous system.
 
-    *   **Padahastasana (Hand to Foot Pose) - Standing/Forward Bend:**
-        *   *Description:* A forward bend often part of Surya Namaskar (Sun Salutation).
-        *   *Benefits:* Massages and tones digestive organs; increases flexibility in calves and hamstrings; can release excess vata (air) from the abdomen; improves blood circulation, spinal nerve stimulation, vitality, and metabolism; improves concentration; helps with nasal and throat diseases.
+*   **Related Asanas for Concentration:**
+    *   **Sukhasana (Easy Pose):**
+        *   *Procedure:* Sit comfortably on the floor with legs crossed, spine erect, hands resting on the knees (palms up or down, often in Jnana Mudra). Relax the shoulders and facial muscles. Breathe gently.
+        *   *Concentration Benefit:* Provides a stable and comfortable base for prolonged sitting, which is essential for concentration and meditation. It calms the mind and reduces physical distractions.
+    *   **Tadasana (Mountain Pose):**
+        *   *Procedure:* Stand tall with feet together or hip-width apart. Distribute weight evenly. Engage thigh muscles, lift the kneecaps. Keep the spine long, shoulders relaxed and away from ears. Arms by the sides, palms facing forward or towards thighs. Gaze softly ahead.
+        *   *Concentration Benefit:* Develops stillness, body awareness, and a sense of grounding, all of which are foundational for concentration. It helps in centering the mind.
+    *   **Padmasana (Lotus Pose):**
+        *   *Procedure:* Sit on the floor. Bend one knee and place the foot on the opposite thigh, sole facing upward. Bend the other knee and place that foot on the other thigh. Keep the spine erect. Hands can rest on knees in a mudra. (Requires significant hip flexibility; modifications should be used if needed).
+        *   *Concentration Benefit:* One of the most traditional meditative postures, it provides a very stable base, keeps the spine erect naturally, and is believed to channel energy upwards, aiding deep concentration and meditation.
+    *   **Shashankasana (Hare Pose or Moon Pose):**
+        *   *Procedure:* Start in Vajrasana. Inhale, raise arms overhead. Exhale, bend forward from the hips, bringing the forehead and arms to the floor in front of the knees (or rest forehead on stacked fists if the floor is not reachable). Hips remain on heels if possible. Relax in the pose.
+        *   *Concentration Benefit:* Calms the brain, relieves stress and fatigue. The gentle forward bend is introspective and helps to quiet the mind, making it easier to concentrate.
 
-    *   **Ardha Chakrasana (Half Wheel Pose) - Standing/Backward Bend:**
-        *   *Description:* An intermediate backbend that prepares for deeper heart-opening postures. 'Ardha' means half, 'chakra' means wheel.
-        *   *Benefits:* Effective in reducing stomach and thigh fat; stimulates the pancreas and controls high blood sugar; improves lung capacity; brings flexibility to the spine and back muscles; tones arms, thighs, waist, and shoulders; relieves neck and shoulder pain; excellent for back pain relief; helps cure respiratory disorders.
+### 5. Relaxation Techniques for Improving Concentration - Yog-nidra
 
-    *   **Vajrasana (Thunderbolt/Diamond Pose) - Sitting/Meditative:**
-        *   *Description:* A simple sitting pose where one kneels and sits back on the legs. Often used for breathing and meditative exercises. Aims to make the body "strong as a diamond."
-        *   *Benefits:* Helps keep the mind calm and stable; aids in curing digestive acidity and gas formation; relieves knee and back pain; strengthens thigh muscles and sexual organs; helps in treating urinary problems; increases blood circulation to the lower abdominal region; aids in reducing obesity and menstrual cramps.
+*   **Yog-nidra (Yogic Sleep):**
+    *   *Description:* Yog-nidra is a powerful technique of guided meditation that induces a state of deep relaxation on physical, mental, and emotional levels. It's a state of conscious sleep where the practitioner is awake and aware but deeply relaxed.
+    *   *How it Improves Concentration:*
+        *   **Reduces Mental Clutter:** By systematically relaxing the body and mind, Yog-nidra helps to clear out mental chatter and distractions.
+        *   **Enhances Awareness:** It cultivates a state of heightened awareness without active engagement, which can translate to improved focus during other activities.
+        *   **Releases Deep-seated Tensions:** Stress and tension are major impediments to concentration. Yog-nidra helps release these, freeing up mental energy.
+        *   **Improves Receptivity:** A relaxed and calm mind is more receptive to learning and focusing.
+    *   *Procedure (Simplified):* Typically involves lying down in Savasana. The practitioner follows guided instructions that include body awareness (rotating consciousness through different body parts), breath awareness, visualization, and often a 'sankalpa' (resolve or intention).
 
-    *   **Padmasana (Lotus Pose) - Sitting/Meditative:**
-        *   *Description:* A cross-legged posture ideal for deep meditation, calming the mind, and alleviating physical ailments. Promotes overall "blossoming" of the practitioner.
-        *   *Benefits:* Improves digestion; reduces muscular tension and helps bring blood pressure under control; relaxes the mind; helps pregnant women during childbirth; reduces menstrual discomfort.
+### 6. Asanas as Preventive Measure
 
-    *   **Bhujangasana (Cobra Pose) - Prone/Backward Bend:**
-        *   *Description:* Mimics a cobra with its hood raised; the eighth pose in the 12-pose Surya Namaskar sequence.
-        *   *Benefits:* Stimulates the digestive system and relieves constipation; makes the spine stronger and more flexible; elevates mood; improves blood circulation; energizes the heart; decreases menstrual irregularities in women; strengthens muscles of the chest, shoulders, arms, and abdomen; relieves sciatica and asthma.
+Yoga asanas play a significant role in preventing various lifestyle diseases and maintaining overall health. They work by:
+*   **Improving Circulation:** Enhancing blood flow to all organs and tissues.
+*   **Strengthening Muscles & Bones:** Reducing the risk of musculoskeletal issues.
+*   **Improving Flexibility:** Maintaining joint health and range of motion.
+*   **Stimulating Organ Function:** Massaging and toning internal organs.
+*   **Reducing Stress:** A major contributor to many modern diseases.
+*   **Promoting Hormonal Balance:** Through their effect on endocrine glands.
+*   **Enhancing Detoxification:** By improving lymphatic drainage and organ function.
 
-    *   **Salabhasana (Locust Pose) - Prone/Backward Bend:**
-        *   *Description:* Prepares for deeper backbends by strengthening the back of the torso, legs, and arms.
-        *   *Benefits:* Strengthens muscles of the spine, buttocks, and backs of the arms and legs; stretches shoulders, chest, belly, and thighs; improves posture; stimulates abdominal organs; helps relieve stress.
+### 7. Specific Asanas for Ailments
 
-    *   **Uttitha Padasana (Raised Legs Pose) - Supine:**
-        *   *Description:* "Utthi" (stomach) + "idham" (protection) + "padam" (foot/leg) + "asanam" (pose). Lying supine with legs straight, both legs are raised.
-        *   *Benefits:* Foundation pose for all standing poses; strengthens heels and balls of the feet, shoulders, and arms; strengthens the sacrum (lowest part of the backbone); improves body alignment and balance.
+*(Note: For asanas listed under multiple ailments, I will detail procedure/benefits/contraindications once, typically under their first mention for a specific ailment, or if details are particularly relevant to that ailment as per the syllabus structure.)*
 
-    *   **Naukasana (Boat Pose) - Supine:**
-        *   *Description:* "Nauka" means boat. The body takes the shape of a boat.
-        *   *Benefits:* Strengthens lungs, liver, and pancreas; increases blood circulation and helps maintain sugar levels; improves circulation of blood and oxygen around the abdomen and lower back; good for reducing belly fat and developing abdominal muscles; strengthens back and abdominal muscles; tones leg and arm muscles; useful for people with hernia; improves digestion.
+*   **Hypertension (High Blood Pressure):**
+    *   **Tadasana (Mountain Pose):**
+        *   *Procedure & Benefits for Hypertension:* As described in section 4. Its grounding and calming nature can help stabilize blood pressure. Promotes even circulation.
+        *   *Contraindications:* Generally safe; individuals with very low blood pressure might feel dizzy if held for too long without movement.
+    *   **Vajrasana (Thunderbolt Pose):**
+        *   *Procedure & Benefits for Hypertension:* As described in section 4. Calms the mind, which can indirectly help manage hypertension. Improves digestion which can also have an effect.
+        *   *Contraindications:* Severe knee problems or recent knee surgery. Ankle injuries.
+    *   **Pavan Muktasana (Wind-Relieving Pose):**
+        *   *Procedure:* Lie on your back. Exhale and bring both knees to your chest. Clasp your hands around your shins or thighs. Gently press the thighs into the abdomen. You can lift your head towards your knees if comfortable. Hold and breathe.
+        *   *Benefits for Hypertension:* Massages abdominal organs, improves digestion, and can have a calming effect on the nervous system, which may help in managing blood pressure. Relieves gas and bloating.
+        *   *Contraindications:* Recent abdominal surgery, hernia, pregnancy (after first trimester or with modifications), severe back or neck issues (avoid lifting head).
+    *   **Ardha Chakrasana (Half Wheel Pose):**
+        *   *Procedure & Benefits for Hypertension:* As described previously. The gentle backbend and chest opening can improve breathing and circulation, but intense backbends should be approached with caution by those with high BP.
+        *   *Contraindications:* Severe back injury, recent abdominal surgery, high blood pressure (perform gently and avoid holding breath).
+    *   **Bhujangasana (Cobra Pose):**
+        *   *Procedure & Benefits for Hypertension:* As described previously. Opens the chest, improves spinal flexibility, and can stimulate circulation. Perform a mild version.
+        *   *Contraindications:* Pregnancy, recent abdominal surgery, severe back injury (e.g., herniated disc), carpal tunnel syndrome (if hands are pressed strongly).
+    *   **Shavasana (Corpse Pose):** (The syllabus lists "Sharasana" which is likely a typo for Savasana, as Savasana is universally used for relaxation and benefits hypertension).
+        *   *Procedure:* Lie flat on your back, legs slightly apart, arms by your sides with palms facing up. Close your eyes and allow the entire body to relax completely. Breathe naturally.
+        *   *Benefits for Hypertension:* Profoundly calming for the nervous system, reduces stress, and helps lower blood pressure. It's a key pose for managing hypertension.
+        *   *Contraindications:* Generally safe for all. If uncomfortable lying flat due to back issues, a bolster can be placed under the knees.
 
-    *   **Savasana (Corpse Pose) - Relaxative:**
-        *   *Description:* A meditative posture lying on one's back, considered a pose of total relaxation and often one of the most challenging to master fully (due to the need for complete mental stillness).
-        *   *Benefits:* Calms the central nervous system, aiding digestive and immune systems; calms the mind and reduces stress, headache, fatigue, and anxiety; helps lower blood pressure; promotes spiritual awakening and awareness of higher consciousness.
-        *   *Importance:* Allows the body to absorb and integrate the benefits of the yoga practice into muscle memory, mind, and nervous system. Helps the physical body (heart rate, blood pressure) and nervous system return to baseline.
+*   **Obesity:**
+    *   **Vajrasana (Thunderbolt Pose):**
+        *   *Procedure:* As described in section 4.
+        *   *Benefits for Obesity:* Aids digestion which is crucial for weight management. Can be done after meals. Helps improve metabolism over time.
+        *   *Contraindications:* Severe knee problems or recent knee surgery. Ankle injuries.
+    *   **Hastasana (Raised Arms Pose / Upward Salute):** (Often refers to Urdhva Hastasana)
+        *   *Procedure:* Stand in Tadasana. Inhale, sweep arms out to the sides and overhead, palms facing each other or touching. Lengthen the spine, look up towards the thumbs if comfortable for the neck.
+        *   *Benefits for Obesity:* Stretches the entire body, especially the sides and abdomen. Improves digestion and can stimulate metabolism. Tones abdominal muscles.
+        *   *Contraindications:* Shoulder or neck injury (modify arm position or gaze). High blood pressure (be cautious with overhead arms for extended periods).
+    *   **Trikonasana (Triangle Pose):**
+        *   *Procedure:* Stand with feet wide apart (3-4 feet). Turn right foot out 90 degrees, left foot in slightly. Align right heel with left arch. Extend arms parallel to floor. Exhale, reach right hand towards right shin/ankle/floor, extending left arm upwards. Look up at left thumb if comfortable. Keep both legs straight.
+        *   *Benefits for Obesity:* Stretches hips, groins, hamstrings, calves, shoulders, chest, and spine. Stimulates abdominal organs, aids digestion. Tones leg muscles. Can help reduce fat around the waist.
+        *   *Contraindications:* Neck problems (look straight ahead instead of up), high or low blood pressure (practice with care), migraine, diarrhea.
+    *   **Ardh Matsyendrasana (Half Lord of the Fishes Pose / Seated Spinal Twist):**
+        *   *Procedure:* Sit with legs extended. Bend right knee, place right foot outside left thigh. Bend left knee, bring left heel near right hip. Inhale, lengthen spine. Exhale, twist torso to the right, placing right hand on floor behind you and left elbow outside right knee (or hug the knee).
+        *   *Benefits for Obesity:* Massages abdominal organs, improving digestion and elimination. Stimulates liver and kidneys. Increases spinal flexibility. Can help tone abdominal muscles.
+        *   *Contraindications:* Pregnancy, recent abdominal or back surgery, severe back or spinal injury (e.g., slipped disc). Peptic ulcer or hernia.
 
-### 3. Pranayama: Control of the Life Force (Breath) 🌬️
+*   **Back Pain:**
+    *   **Tadasana (Mountain Pose):** (Strengthens spine, improves alignment)
+    *   **Ardh Matsyendrasana (Half Lord of the Fishes Pose):** (Increases spinal flexibility, relieves stiffness - perform gently)
+    *   **Vakrasana (Simple Spinal Twist):**
+        *   *Procedure:* Sit with legs extended. Bend right knee, place right foot flat beside left knee. Place right hand on floor behind you. Inhale, raise left arm. Exhale, twist to the right, bringing left arm outside right thigh or hugging the knee. Keep spine erect.
+        *   *Benefits for Back Pain:* Gently twists and increases flexibility of the spine, relieving mild backache and stiffness. Massages abdominal organs.
+        *   *Contraindications:* Severe back pain or spinal injury (e.g., slipped disc), recent abdominal surgery, pregnancy.
+    *   **Shalabhasana (Locust Pose):**
+        *   *Procedure:* Lie prone (on stomach), forehead on floor, arms alongside body, palms up. Inhale, lift head, chest, arms, and legs off the floor. Engage back muscles and glutes. Keep legs straight.
+        *   *Benefits for Back Pain:* Strengthens the entire back musculature, including the lower back, improving support for the spine. Relieves sciatic pain.
+        *   *Contraindications:* Pregnancy, recent abdominal surgery, severe back injury (perform very gently or avoid).
+    *   **Bhujangasana (Cobra Pose):** (Strengthens spine, relieves stiffness - perform mild version)
 
-Pranayama, meaning "extension of the life force (prana) or breath," is a vital limb of yoga, often preceding meditation. It focuses on regulating the breath to improve health, calm the mind, and gain control over one's thoughts and vital energy. Morning (especially 4 am-5 am, Brahmamuhurta, or 5:30-6:00 am) is considered the best time for pranayama.
+*   **Diabetes:**
+    *   **Bhujangasana (Cobra Pose):**
+        *   *Procedure:* As previously described.
+        *   *Benefits for Diabetes:* The pressure on the abdomen can stimulate the pancreas. Improves digestion and circulation.
+        *   *Contraindications:* As previously listed.
+    *   **Paschimottasana (Seated Forward Bend):**
+        *   *Procedure:* Sit with legs extended forward. Inhale, lengthen spine, raise arms. Exhale, hinge from hips and bend forward, reaching for feet/ankles/shins. Keep back as straight as possible initially, then allow a gentle rounding.
+        *   *Benefits for Diabetes:* Massages and tones abdominal organs including the pancreas. Calms the brain, relieves stress. Stretches the spine and hamstrings.
+        *   *Contraindications:* Asthma, diarrhea, back injury (modify or avoid deep flexion), pregnancy.
+    *   **Pavan Muktasana (Wind-Relieving Pose):**
+        *   *Procedure:* As previously described.
+        *   *Benefits for Diabetes:* Massages abdominal organs, including the pancreas. Aids digestion.
+        *   *Contraindications:* As previously listed.
+    *   **Ardh Matsyendrasana (Half Lord of the Fishes Pose):**
+        *   *Procedure:* As previously described.
+        *   *Benefits for Diabetes:* The twist compresses and massages abdominal organs, potentially stimulating pancreatic function.
+        *   *Contraindications:* As previously listed.
 
-*   **Surya Bhedana (Right Nostril Breathing - HEATING):**
-    *   *Description:* 'Surya' (Sun), 'Bhedana' (Piercing/Entering). In yogic terms, the right nostril is the 'gateway of Sun Energy' (Pingala Nadi - hot, masculine vitality). Inhalation is through the right nostril, exhalation through the left or right.
-    *   *Performance:* Sit comfortably (Padmasana, Siddhasana, Swastikasana), spine erect, eyes closed. Close left nostril with ring/little finger, inhale slowly, deeply, quietly through the right. Close right nostril with thumb, hold breath briefly, exhale through left nostril. Repeat 5-10 times.
-    *   *Benefits:* Increases digestive system efficiency; activates the physical body and its functions; replenishes oxygen supply; cleanses frontal sinuses; increases body temperature, clears mucus imbalance; reduces anxiety, manages stress better; removes blockages in pranic energy channels, leading to spiritual awakening.
+*   **Asthma:**
+    *   **Sukhasana (Easy Pose):** (Promotes calm, even breathing)
+    *   **Chakrasana (Wheel Pose / Upward Bow Pose):**
+        *   *Procedure:* Lie on your back, bend knees, feet flat near hips. Place hands by ears, fingers pointing towards shoulders. Inhale, press into hands and feet, lift hips and chest, then head, arching the back. (Advanced pose).
+        *   *Benefits for Asthma:* Deeply opens the chest and lungs, increasing lung capacity. Strengthens the entire body.
+        *   *Contraindications:* Back injury, carpal tunnel syndrome, headache, heart problems, high or low blood pressure. Not for beginners without guidance.
+    *   **Gomukhasana (Cow Face Pose):**
+        *   *Procedure:* Sit, bend right knee under left, bringing right heel beside left hip. Stack left knee over right, left heel beside right hip. Inhale, raise left arm, bend elbow, place palm on back. Exhale, reach right arm behind back from below, try to clasp fingers. Keep spine erect.
+        *   *Benefits for Asthma:* Stretches chest and shoulders, promoting deeper breathing.
+        *   *Contraindications:* Severe shoulder, neck, or knee pain.
+    *   **Parvatasana (Mountain Pose - Seated version / or Adho Mukha Svanasana - Downward Dog which resembles a mountain):** (Assuming Adho Mukha Svanasana here as it opens chest more for asthma)
+        *   *Procedure (Adho Mukha Svanasana):* Start on hands and knees. Exhale, lift hips up and back, straightening legs and arms, forming an inverted 'V'. Press hands into floor, lengthen spine.
+        *   *Benefits for Asthma:* Opens chest and shoulders, lengthens spine, calms the brain. Can relieve mild breathlessness.
+        *   *Contraindications:* Carpal tunnel, late-term pregnancy, high blood pressure, headache (support head).
+    *   **Bhujangasana (Cobra Pose):** (Opens chest)
+    *   **Paschimottasana (Seated Forward Bend):** (Calming, but avoid if it restricts breath)
+    *   **Matsyasana (Fish Pose):**
+        *   *Procedure:* Lie on back, legs extended or in Padmasana. Place hands under hips, palms down. Inhale, press into elbows and forearms, arch back, lift chest, and gently lower crown of head to floor (or let it hang).
+        *   *Benefits for Asthma:* Expands the chest and rib cage, encourages deeper breathing, stretches neck and throat. Can relieve respiratory congestion.
+        *   *Contraindications:* High or low blood pressure, migraine, serious lower back or neck injury.
 
-*   **Chandra Bhedana Pranayama (Left Nostril Breathing - COOLING):**
-    *   *Description:* 'Chandra' (Moon - symbol of coolness). Left nostril is the 'gateway of moon energy' (Ida Nadi - calm, feminine vitality). Inhalation through the left nadi, exhalation through the right nadi or left nostril. (The document mentions exhaling through right or *right* nostril, which seems like a typo, usually it's the opposite nostril for balancing types or same for specific effect).
-    *   *Benefits:* Reduces body heat; useful for heartburn; refreshes body and mind, combats laziness; very effective for high blood pressure; useful in fever; steadies the mind with daily practice; useful in reducing tension, stress, and other mental problems.
-
-*   **Nadi Shuddhi Pranayama (Alternate Nostril Breathing - BALANCING):**
-    *   *Description:* Purifies the energy channels (nadis) and balances prana. Reduces stress and acid reflux.
-    *   *Performance:* Gently close left nostril, inhale through right. Pause. Switch fingers, open left, close right. Exhale through left. Pause. Inhale through left. Continue switching at the end of each inhalation for a full cycle through each nostril.
-    *   *Benefits:* Improves respiratory health (decreases pulse and respiratory rate); improves cardiovascular health (can reduce systolic and diastolic blood pressure); reduces stress and anxiety; balances sympathetic and parasympathetic nervous systems; prepares for yogic meditation; enhances spiritual experiences.
-
-### 4. The Eight Limbs of Yoga (Ashtanga Yoga of Patanjali) 🌟
-
-Patanjali's Yoga Sutras outline an eightfold path (Ashtanga) providing a guide for holistic living and union of body, mind, and spirit. These are intended to be practiced integratively:
-
-1.  **Yamas (Universal Moral/Ethical Observances - The "Don'ts"):**
-    *   *Ahimsa:* Non-violence, non-harming.
-    *   *Satya:* Truthfulness, non-falsehood.
-    *   *Asteya:* Non-stealing.
-    *   *Brahmacharya:* Continence, marital fidelity, or sexual restraint; responsible use of energy.
-    *   *Aparigraha:* Non-avarice, non-possessiveness, non-hoarding.
-
-2.  **Niyamas (Personal/Self-Discipline Observances - The "Do's"):**
-    *   *Shaucha:* Purity, clearness of mind, speech, and body.
-    *   *Santosha:* Contentment, acceptance of others and one's circumstances, optimism.
-    *   *Tapas:* Persistence, perseverance, austerity, asceticism, self-discipline (the fiery effort that burns away impurities).
-    *   *Svadhyaya:* Study of Vedas/scriptures, study of self, self-reflection, introspection.
-    *   *Ishvarapranidhana:* Contemplation of or surrender to Ishvara (God/Supreme Being, Brahman, True Self, Unchanging Reality).
-
-3.  **Asana (Physical Posture):**
-    *   Originally intended for seated meditation, now adapted to encompass all physical yoga practices. A posture held with steadiness, comfort, and relaxation, without motion.
-
-4.  **Pranayama (Breath Control):**
-    *   Control of prana (vital life force) through breath.
-
-5.  **Pratyahara (Withdrawal of the Senses):**
-    *   Retracting sensory experience from external objects; consciously closing mind processes to the sensory world to seek self-knowledge and inner freedom. Not about physically closing eyes, but turning awareness inward.
-
-6.  **Dharana (Concentration):**
-    *   Holding the mind onto a particular inner state, subject, or topic; one-pointedness of mind.
-
-7.  **Dhyana (Meditation):**
-    *   Contemplation, reflection; profound, abstract meditation. Reflecting on whatever Dharana has focused on. An unbroken flow of attention.
-
-8.  **Samadhi (Liberation/Union):**
-    *   "Putting together, joining, harmonious whole, trance." Oneness with the subject of meditation; the mind loses the sense of its own identity and is absorbed in the object of contemplation. Blissful union with the Divine or True Self.
-
-### 5. Stress Management through Yoga 😌
-
-*   **Definition of Stress:** A state of mental or physical tension and worry caused by problems in life, work, etc. It's the body's reaction to a challenge or demand. Short bursts can be positive (e.g., meeting a deadline), but chronic stress is detrimental.
-*   **Examples of Life Stresses:** Death of a loved one, divorce, job loss, financial obligations, marriage, moving, chronic illness/injury, emotional problems (depression, anxiety, anger, grief, guilt, low self-esteem).
-*   **Causes of Stress:** Jobs, workplace issues, financial problems, personal relationships, children, education, sexual problems, daily hassles, busy life.
-*   **Stress Management Techniques (Yoga plays a role in many of these):**
-    *   Exercise (Asanas)
-    *   Meditation (Dhyana, Yoga Nidra)
-    *   Deep Breathing (Pranayama)
-    *   Relaxation (Savasana, Yoga Nidra)
-    *   Other techniques: Getting a hobby, pets, reading, spas, spending time in nature, time management, music.
-
-This covers the key aspects of Yoga & Lifestyle from the document you provided. Let me know if you have any specific areas you'd like to dive into deeper!
+This structure should align much better with your specific syllabus for Module V.
