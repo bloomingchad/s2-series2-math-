@@ -1,98 +1,88 @@
-## Q1. Reverse an Integer Using `reverse()` Function
+## Q1). Write a C program to reverse an integer using a function reverse().
 
 ```c
 #include <stdio.h>
 
 int reverse(int num) {
-    int rev = 0;
+    int reversed_num = 0;
     while (num != 0) {
-        rev = rev * 10 + num % 10;
+        int digit = num % 10;
+        reversed_num = reversed_num * 10 + digit;
         num /= 10;
     }
-    return rev;
+    return reversed_num;
 }
 
 int main() {
-    int n;
+    int number;
     printf("Enter an integer: ");
-    scanf("%d", &n);
-    printf("Reversed number: %d\n", reverse(n));
+    scanf("%d", &number);
+    printf("Reversed number: %d\n", reverse(number));
     return 0;
 }
 ```
 
 ---
 
-## Q2. Check if Four-Digit Number is Armstrong
+## Q2). Write a program in C to check whether a four digit integer is Armstrong number or not using a function armstrg().
 
 ```c
 #include <stdio.h>
 #include <math.h>
 
 int armstrg(int num) {
-    int temp = num, sum = 0;
-    while (temp != 0) {
-        sum += pow(temp % 10, 4);
-        temp /= 10;
+    int original_num = num;
+    int sum_of_powers = 0;
+    while (num != 0) {
+        int digit = num % 10;
+        sum_of_powers += pow(digit, 4);
+        num /= 10;
     }
-    return (sum == num);
+    if (sum_of_powers == original_num) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 int main() {
-    int n;
+    int number;
     printf("Enter a 4-digit number: ");
-    scanf("%d", &n);
-    if (armstrg(n))
-        printf("%d is an Armstrong number.\n", n);
-    else
-        printf("%d is not an Armstrong number.\n", n);
+    scanf("%d", &number);
+    if (armstrg(number)) {
+        printf("%d is an Armstrong number.\n", number);
+    } else {
+        printf("%d is not an Armstrong number.\n", number);
+    }
     return 0;
 }
 ```
 
 ---
 
-## Q3. Print Prime Numbers Between 10-50
+## Q3). Write a program in C to print all prime numbers between 10-50. Use function to check number is prime or not.
 
 ```c
 #include <stdio.h>
 
 int isPrime(int n) {
-    for (int i = 2; i * i <= n; i++)
-        if (n % i == 0)
+    if (n < 2) {
+        return 0;
+    }
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
             return 0;
+        }
+    }
     return 1;
 }
 
 int main() {
     printf("Prime numbers between 10 and 50:\n");
-    for (int i = 10; i <= 50; i++)
-        if (isPrime(i))
+    for (int i = 10; i <= 50; i++) {
+        if (isPrime(i)) {
             printf("%d ", i);
-    printf("\n");
-    return 0;
-}
-```
-
----
-
-## Q4. Fibonacci Series Using Iteration
-
-```c
-#include <stdio.h>
-
-int main() {
-    int n, a = 0, b = 1, c;
-
-    printf("How many terms? ");
-    scanf("%d", &n);
-
-    printf("Fibonacci series: ");
-    for (int i = 1; i <= n; i++) {
-        printf("%d ", a);
-        c = a + b;
-        a = b;
-        b = c;
+        }
     }
     printf("\n");
     return 0;
@@ -101,15 +91,45 @@ int main() {
 
 ---
 
-## Q5. Fibonacci Series Using Recursion
+## Q4). Write a program in C to print the Fibonacci series using iteration.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int n, a = 0, b = 1, next_term;
+
+    printf("How many terms? ");
+    scanf("%d", &n);
+
+    printf("Fibonacci series: ");
+
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", a);
+        next_term = a + b;
+        a = b;
+        b = next_term;
+    }
+    printf("\n");
+    return 0;
+}
+```
+
+---
+
+## Q5). Write a program in C to print the Fibonacci series using recursion.
 
 ```c
 #include <stdio.h>
 
 int fib(int n) {
-    if (n == 1 || n == 2)
-        return n - 1;
-    return fib(n - 1) + fib(n - 2);
+    if (n == 1) {
+        return 0;
+    } else if (n == 2) {
+        return 1;
+    } else {
+        return fib(n - 1) + fib(n - 2);
+    }
 }
 
 int main() {
@@ -117,8 +137,9 @@ int main() {
     printf("Enter number of terms: ");
     scanf("%d", &n);
     printf("Fibonacci series: ");
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) {
         printf("%d ", fib(i));
+    }
     printf("\n");
     return 0;
 }
@@ -126,125 +147,156 @@ int main() {
 
 ---
 
-## Q6. Check Palindrome Using Iteration
+## Q6). Write a program in C to check whether a number is palindrome or not using iteration.
 
 ```c
 #include <stdio.h>
 
 int isPalindrome(int num) {
-    int rev = 0, temp = num;
-    while (temp != 0) {
-        rev = rev * 10 + temp % 10;
-        temp /= 10;
+    int original_num = num;
+    int reversed_num = 0;
+    while (num != 0) {
+        int digit = num % 10;
+        reversed_num = reversed_num * 10 + digit;
+        num /= 10;
     }
-    return (rev == num);
+    if (original_num == reversed_num) {
+        return 1;
+    } else {
+        return 0;
+    }
 }
 
 int main() {
-    int n;
+    int number;
     printf("Enter a number: ");
-    scanf("%d", &n);
-    if (isPalindrome(n))
-        printf("%d is a palindrome.\n", n);
-    else
-        printf("%d is not a palindrome.\n", n);
+    scanf("%d", &number);
+    if (isPalindrome(number)) {
+        printf("%d is a palindrome.\n", number);
+    } else {
+        printf("%d is not a palindrome.\n", number);
+    }
     return 0;
 }
 ```
 
 ---
 
-## Q7. Find First Two Largest Elements in Array
+## Q7). C program to find first two largest elements of an array
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int arr[10], first = 0, second = 0;
+    int arr[10];
+    int first_largest = 0;
+    int second_largest = 0;
 
     printf("Enter 10 integers:\n");
     for (int i = 0; i < 10; i++) {
         scanf("%d", &arr[i]);
-        if (arr[i] > first) {
-            second = first;
-            first = arr[i];
-        } else if (arr[i] > second && arr[i] != first)
-            second = arr[i];
     }
 
-    printf("Largest: %d, Second Largest: %d\n", first, second);
+    for (int i = 0; i < 10; i++) {
+        if (arr[i] > first_largest) {
+            second_largest = first_largest;
+            first_largest = arr[i];
+        } else if (arr[i] > second_largest && arr[i] != first_largest) {
+            second_largest = arr[i];
+        }
+    }
+
+    printf("Largest: %d, Second Largest: %d\n", first_largest, second_largest);
     return 0;
 }
 ```
 
 ---
 
-## Q8. Calculate Final Pay with Deductions
+## Q8). Accept basic pay. Calculate DA at 8% and PF at 9%. (net pay=basic pay + da - pf). If net pay is more than Rs.10000, then a deduction of 2% on the net pay else no deduction. Calculate and print the final pay using a C program.
 
 ```c
 #include <stdio.h>
 
 int main() {
-    float basic, da, pf, net, finalPay;
+    float basic_pay, da, pf, net_pay, final_pay;
+
     printf("Enter Basic Pay: ");
-    scanf("%f", &basic);
+    scanf("%f", &basic_pay);
 
-    da = 0.08 * basic;
-    pf = 0.09 * basic;
-    net = basic + da - pf;
+    da = 0.08 * basic_pay;
+    pf = 0.09 * basic_pay;
+    net_pay = basic_pay + da - pf;
 
-    if (net > 10000)
-        finalPay = net - (0.02 * net);
-    else
-        finalPay = net;
+    if (net_pay > 10000) {
+        final_pay = net_pay - (0.02 * net_pay);
+    } else {
+        final_pay = net_pay;
+    }
 
-    printf("Final Pay: %.2f\n", finalPay);
+    printf("Final Pay: %.2f\n", final_pay);
     return 0;
 }
 ```
 
 ---
 
-## Q9. Count Occurrence of a Digit in Array
+## 9). Program to count occurrence of a digit in an array. Use function to read the array.
 
 ```c
 #include <stdio.h>
 
 void readArray(int arr[], int size) {
     printf("Enter %d elements:\n", size);
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
+    }
 }
 
 int countDigit(int arr[], int size, int digit) {
     int count = 0;
-    for (int i = 0; i < size; i++)
-        if (arr[i] == digit)
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == digit) {
             count++;
+        }
+    }
     return count;
 }
 
 int main() {
-    int arr[10], d;
+    int arr[10];
+    int digit_to_count;
+
     readArray(arr, 10);
+
     printf("Enter digit to count: ");
-    scanf("%d", &d);
-    printf("Digit %d occurs %d times.\n", d, countDigit(arr, 10, d));
+    scanf("%d", &digit_to_count);
+
+    printf("Digit %d occurs %d times.\n", digit_to_count, countDigit(arr, 10, digit_to_count));
+
     return 0;
 }
 ```
 
 ---
 
-## Q10. Pattern Printing (*)
+## 10). Write a C program to print the following pattern
+
+```
+*
+* *
+* * *
+* * * *
+```
 
 ```c
 #include <stdio.h>
 
 int main() {
     for (int i = 1; i <= 4; i++) {
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= i; j++) {
             printf("* ");
+        }
         printf("\n");
     }
     return 0;
@@ -253,15 +305,23 @@ int main() {
 
 ---
 
-## Q11. Pattern Printing (1, 1 2, 1 2 3...)
+## 11). Write aC program to print the following pattern
+
+```
+1
+1 2
+1 2 3
+1 2 3 4
+```
 
 ```c
 #include <stdio.h>
 
 int main() {
     for (int i = 1; i <= 4; i++) {
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= i; j++) {
             printf("%d ", j);
+        }
         printf("\n");
     }
     return 0;
@@ -270,52 +330,59 @@ int main() {
 
 ---
 
-## Q12. Sort Array in Descending Order Using Pointers
+## 12). Write a C program to arrange the given array in descending order using pointers.
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int arr[5], *p = arr;
+    int arr[5];
+    int *ptr = arr;
 
     printf("Enter 5 integers:\n");
-    for (int i = 0; i < 5; i++)
-        scanf("%d", p + i);
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", ptr + i);
+    }
 
     for (int i = 0; i < 5; i++) {
         for (int j = i + 1; j < 5; j++) {
-            if (*(p + i) < *(p + j)) {
-                int temp = *(p + i);
-                *(p + i) = *(p + j);
-                *(p + j) = temp;
+            if (*(ptr + i) < *(ptr + j)) {
+                int temp = *(ptr + i);
+                *(ptr + i) = *(ptr + j);
+                *(ptr + j) = temp;
             }
         }
     }
 
     printf("Sorted in descending order:\n");
-    for (int i = 0; i < 5; i++)
-        printf("%d ", *(p + i));
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", *(ptr + i));
+    }
     printf("\n");
 
     return 0;
 }
 ```
 
+---
 
-## Q13. Print Diagonal Elements of a Matrix
+## 13). Write a C program to print Diagonal elements of a matrix. Use function to read the matrix.
 
 ```c
 #include <stdio.h>
 
 void readMatrix(int mat[10][10], int size) {
     printf("Enter %d x %d matrix:\n", size, size);
-    for (int i = 0; i < size; i++)
-        for (int j = 0; j < size; j++)
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 }
 
 int main() {
-    int mat[10][10], size;
+    int mat[10][10];
+    int size;
 
     printf("Enter size of square matrix: ");
     scanf("%d", &size);
@@ -323,32 +390,37 @@ int main() {
     readMatrix(mat, size);
 
     printf("Diagonal elements:\n");
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++) {
         printf("%d ", mat[i][i]);
-
+    }
     printf("\n");
+
     return 0;
 }
 ```
 
 ---
 
-## Q14. Find Smallest Element Using Pointer
+## 14). Write a C program to find Smallest element of an array using pointer.
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int arr[5], *p = arr, smallest;
+    int arr[5];
+    int *ptr = arr;
+    int smallest;
 
     printf("Enter 5 numbers:\n");
-    for (int i = 0; i < 5; i++)
-        scanf("%d", p + i);
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", ptr + i);
+    }
 
-    smallest = *p;
+    smallest = *ptr;
     for (int i = 1; i < 5; i++) {
-        if (*(p + i) < smallest)
-            smallest = *(p + i);
+        if (*(ptr + i) < smallest) {
+            smallest = *(ptr + i);
+        }
     }
 
     printf("Smallest element: %d\n", smallest);
@@ -358,42 +430,48 @@ int main() {
 
 ---
 
-## Q15. Check Identity Matrix
+## 15). Write a C program to Check whether given matrix is identity matrix or not. Use function to read the matrix.
 
 ```c
 #include <stdio.h>
 
 void readMatrix(int mat[10][10], int size) {
     printf("Enter %d x %d matrix:\n", size, size);
-    for (int i = 0; i < size; i++)
-        for (int j = 0; j < size; j++)
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 }
 
 int isIdentity(int mat[10][10], int size) {
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
-            if (i == j && mat[i][j] != 1)
+            if (i == j && mat[i][j] != 1) {
                 return 0;
-            if (i != j && mat[i][j] != 0)
+            }
+            if (i != j && mat[i][j] != 0) {
                 return 0;
+            }
         }
     }
     return 1;
 }
 
 int main() {
-    int mat[10][10], size;
+    int mat[10][10];
+    int size;
 
     printf("Enter size of matrix: ");
     scanf("%d", &size);
 
     readMatrix(mat, size);
 
-    if (isIdentity(mat, size))
+    if (isIdentity(mat, size)) {
         printf("It is an identity matrix.\n");
-    else
+    } else {
         printf("Not an identity matrix.\n");
+    }
 
     return 0;
 }
@@ -401,20 +479,23 @@ int main() {
 
 ---
 
-## Q16. Average of Each Row in Matrix
+## 16). Write a C program to find the average of elements in each row of the matrix. Use function to read the matrix.
 
 ```c
 #include <stdio.h>
 
 void readMatrix(int mat[10][10], int rows, int cols) {
     printf("Enter matrix (%d x %d):\n", rows, cols);
-    for (int i = 0; i < rows; i++)
-        for (int j = 0; j < cols; j++)
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 }
 
 int main() {
-    int mat[10][10], rows, cols;
+    int mat[10][10];
+    int rows, cols;
 
     printf("Enter number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
@@ -423,8 +504,9 @@ int main() {
 
     for (int i = 0; i < rows; i++) {
         float sum = 0;
-        for (int j = 0; j < cols; j++)
+        for (int j = 0; j < cols; j++) {
             sum += mat[i][j];
+        }
         printf("Average of row %d: %.2f\n", i + 1, sum / cols);
     }
 
@@ -434,7 +516,7 @@ int main() {
 
 ---
 
-## Q17. Concatenate Two Strings Without Library Functions
+## 17). Read two strings (each one ending with a $ symbol), store them in arrays and concatenate them without using library functions.
 
 ```c
 #include <stdio.h>
@@ -443,12 +525,12 @@ int main() {
     char str1[100], str2[100];
 
     printf("Enter first string ending with $: ");
-    scanf("%[^$]s", str1); // Read until $ symbol
-    getchar(); // To remove $
+    scanf("%[^$]s", str1);
+    getchar();
 
     printf("Enter second string ending with $: ");
-    scanf("%[^$]s", str2); // Read until $
-    getchar(); // To remove $
+    scanf("%[^$]s", str2);
+    getchar();
 
     int i = 0, j = 0;
     while (str1[i] != '\0') i++;
@@ -464,10 +546,11 @@ int main() {
 
 ---
 
-## Q18. Count Vowels, Consonants, Spaces in String
+## 18). Read a string (ending with a $ symbol), store it in an array and count the number of vowels, consonants and spaces in it.
 
 ```c
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
     char str[100];
@@ -478,12 +561,13 @@ int main() {
 
     for (int i = 0; str[i] != '\0'; i++) {
         char ch = tolower(str[i]);
-        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
             vowels++;
-        else if (ch >= 'a' && ch <= 'z')
+        } else if (ch >= 'a' && ch <= 'z') {
             consonants++;
-        else if (ch == ' ')
+        } else if (ch == ' ') {
             spaces++;
+        }
     }
 
     printf("Vowels: %d\nConsonants: %d\nSpaces: %d\n", vowels, consonants, spaces);
@@ -493,7 +577,7 @@ int main() {
 
 ---
 
-## Q19. Evaluate Arithmetic Expression and Transpose Matrix
+## 19). Evaluate the arithmetic expression ((a -b / c * d + e) * (f+g)) and display its solution.Read the values of the variables from the user through console. Read a matrix of size equal to the solution and dsplay its transpose
 
 ```c
 #include <stdio.h>
@@ -509,18 +593,23 @@ int main() {
     int mat[result][result], transpose[result][result];
 
     printf("Enter matrix of size %dx%d:\n", result, result);
-    for (int i = 0; i < result; i++)
-        for (int j = 0; j < result; j++)
+    for (int i = 0; i < result; i++) {
+        for (int j = 0; j < result; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 
-    for (int i = 0; i < result; i++)
-        for (int j = 0; j < result; j++)
+    for (int i = 0; i < result; i++) {
+        for (int j = 0; j < result; j++) {
             transpose[j][i] = mat[i][j];
+        }
+    }
 
     printf("Transpose of matrix:\n");
     for (int i = 0; i < result; i++) {
-        for (int j = 0; j < result; j++)
+        for (int j = 0; j < result; j++) {
             printf("%d ", transpose[i][j]);
+        }
         printf("\n");
     }
 
@@ -530,7 +619,13 @@ int main() {
 
 ---
 
-## Q20. Calculate Net Amount Based on Discount
+## 20). Input the name of the item, quantity and the price and calculate the net amount based on purchase price.
+
+```
+Amount purchased   Discount
+Less than 3000     10%
+else               12%
+```
 
 ```c
 #include <stdio.h>
@@ -549,31 +644,37 @@ int main() {
 
     total = qty * price;
 
-    if (total < 3000)
+    if (total < 3000) {
         discount = 0.10 * total;
-    else
+    } else {
         discount = 0.12 * total;
+    }
 
     printf("Net amount after discount: %.2f\n", total - discount);
     return 0;
 }
 ```
 
-## Q21. Menu Driven Program for Matrix Operations (Sum, Difference, Transpose)
+---
+
+## 21). Write a menu driven program to find the sum, difference and transpose of given matrices.
 
 ```c
 #include <stdio.h>
 
 void readMatrix(int mat[10][10], int r, int c) {
-    for (int i = 0; i < r; i++)
-        for (int j = 0; j < c; j++)
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 }
 
 void printMatrix(int mat[10][10], int r, int c) {
     for (int i = 0; i < r; i++) {
-        for (int j = 0; j < c; j++)
+        for (int j = 0; j < c; j++) {
             printf("%d ", mat[i][j]);
+        }
         printf("\n");
     }
 }
@@ -599,25 +700,31 @@ int main() {
 
         switch(choice) {
             case 1:
-                for (int i = 0; i < r; i++)
-                    for (int j = 0; j < c; j++)
+                for (int i = 0; i < r; i++) {
+                    for (int j = 0; j < c; j++) {
                         res[i][j] = mat1[i][j] + mat2[i][j];
+                    }
+                }
                 printf("Sum:\n");
                 printMatrix(res, r, c);
                 break;
 
             case 2:
-                for (int i = 0; i < r; i++)
-                    for (int j = 0; j < c; j++)
+                for (int i = 0; i < r; i++) {
+                    for (int j = 0; j < c; j++) {
                         res[i][j] = mat1[i][j] - mat2[i][j];
+                    }
+                }
                 printf("Difference:\n");
                 printMatrix(res, r, c);
                 break;
 
             case 3:
-                for (int i = 0; i < r; i++)
-                    for (int j = 0; j < c; j++)
+                for (int i = 0; i < r; i++) {
+                    for (int j = 0; j < c; j++) {
                         res[j][i] = mat1[i][j];
+                    }
+                }
                 printf("Transpose of matrix 1:\n");
                 printMatrix(res, c, r);
                 break;
@@ -638,29 +745,31 @@ int main() {
 
 ---
 
-## Q22. Check Positive Number and Print Reverse
+## 22). Write a C program to check if integer entered by user is positive or not. If integer is positive then print the reverse of the number.
 
 ```c
 #include <stdio.h>
 
 int reverse(int num) {
-    int rev = 0;
+    int reversed_num = 0;
     while (num != 0) {
-        rev = rev * 10 + num % 10;
+        int digit = num % 10;
+        reversed_num = reversed_num * 10 + digit;
         num /= 10;
     }
-    return rev;
+    return reversed_num;
 }
 
 int main() {
-    int n;
+    int number;
     printf("Enter a number: ");
-    scanf("%d", &n);
+    scanf("%d", &number);
 
-    if (n > 0)
-        printf("Reverse of %d is %d\n", n, reverse(n));
-    else
+    if (number > 0) {
+        printf("Reverse of %d is %d\n", number, reverse(number));
+    } else {
         printf("Number is not positive.\n");
+    }
 
     return 0;
 }
@@ -668,20 +777,23 @@ int main() {
 
 ---
 
-## Q23. Sum of Each Column in Matrix
+## 23). Write a C program to read matrix A (MXN) and find the Sum of elements of each of N columns. Use function to read the matrix.
 
 ```c
 #include <stdio.h>
 
 void readMatrix(int mat[10][10], int r, int c) {
     printf("Enter matrix (%d x %d):\n", r, c);
-    for (int i = 0; i < r; i++)
-        for (int j = 0; j < c; j++)
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 }
 
 int main() {
-    int mat[10][10], rows, cols;
+    int mat[10][10];
+    int rows, cols;
 
     printf("Enter number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
@@ -691,8 +803,9 @@ int main() {
     int sum;
     for (int j = 0; j < cols; j++) {
         sum = 0;
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < rows; i++) {
             sum += mat[i][j];
+        }
         printf("Sum of column %d: %d\n", j+1, sum);
     }
 
@@ -702,46 +815,54 @@ int main() {
 
 ---
 
-## Q24. Sum of All Elements in Matrix
+## 24). Write a C program to read matrix A (MXN) and find the sum of all elements of the matrix. Use function to read the matrix.
 
 ```c
 #include <stdio.h>
 
 void readMatrix(int mat[10][10], int r, int c) {
     printf("Enter matrix (%d x %d):\n", r, c);
-    for (int i = 0; i < r; i++)
-        for (int j = 0; j < c; j++)
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 }
 
 int main() {
-    int mat[10][10], rows, cols, total = 0;
+    int mat[10][10];
+    int rows, cols, total_sum = 0;
 
     printf("Enter number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
 
     readMatrix(mat, rows, cols);
 
-    for (int i = 0; i < rows; i++)
-        for (int j = 0; j < cols; j++)
-            total += mat[i][j];
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            total_sum += mat[i][j];
+        }
+    }
 
-    printf("Total sum of all elements: %d\n", total);
+    printf("Total sum of all elements: %d\n", total_sum);
     return 0;
 }
 ```
 
 ---
 
-## Q25. Calculate n! / (n - r)! Using Factorial Function
+## 25). Write a well-structured C program to read two integer numbers n and r. Write a function to calculate factorial of a number. Using the function calculate,
+
+i) n!/((n-r)!)
 
 ```c
 #include <stdio.h>
 
 long factorial(int n) {
     long fact = 1;
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) {
         fact *= i;
+    }
     return fact;
 }
 
@@ -758,15 +879,18 @@ int main() {
 
 ---
 
-## Q26. Calculate n! / (n! * (n - r)!) Using Factorial Function
+## 26). Write a well-structured C program to read two integer numbers n and r. Write a function to calculate factorial of a number. Using the function calculate,
+
+i) n!/(n!(n-r)!)
 
 ```c
 #include <stdio.h>
 
 long factorial(int n) {
     long fact = 1;
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) {
         fact *= i;
+    }
     return fact;
 }
 
@@ -783,22 +907,27 @@ int main() {
 
 ---
 
-## Q27. Linear Search for Key in Array
+## 27). Write a well-structured C program to input N numbers, conduct a linear search for a given key number and report success or failure.
 
 ```c
 #include <stdio.h>
 
 int main() {
-    int arr[10], key, found = 0;
+    int n, arr[100], key;
 
-    printf("Enter 10 numbers:\n");
-    for (int i = 0; i < 10; i++)
+    printf("How many numbers? ");
+    scanf("%d", &n);
+
+    printf("Enter %d numbers:\n", n);
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
+    }
 
     printf("Enter key to search: ");
     scanf("%d", &key);
 
-    for (int i = 0; i < 10; i++) {
+    int found = 0;
+    for (int i = 0; i < n; i++) {
         if (arr[i] == key) {
             printf("Key found at index %d\n", i);
             found = 1;
@@ -806,8 +935,9 @@ int main() {
         }
     }
 
-    if (!found)
+    if (!found) {
         printf("Key not found.\n");
+    }
 
     return 0;
 }
@@ -815,7 +945,7 @@ int main() {
 
 ---
 
-## Q28. Sort 10 Names Alphabetically
+## 28). Write a well-structured C program to input 10 names each of length at least 8 characters. Sort them in alphabetical order.
 
 ```c
 #include <stdio.h>
@@ -825,10 +955,10 @@ int main() {
     char names[10][20], temp[20];
 
     printf("Enter 10 names (each at least 8 characters):\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++) {
         scanf("%s", names[i]);
+    }
 
-    // Bubble sort
     for (int i = 0; i < 9; i++) {
         for (int j = i + 1; j < 10; j++) {
             if (strcmp(names[i], names[j]) > 0) {
@@ -840,8 +970,9 @@ int main() {
     }
 
     printf("Sorted names:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++) {
         printf("%s\n", names[i]);
+    }
 
     return 0;
 }
@@ -849,7 +980,7 @@ int main() {
 
 ---
 
-## Q29. Compute TV Advertisement Bill
+## 29). 22. Write a well-structured C program to accept a television scrolling advertisement message and compute the bill. If there are less than 50 characters (including space), then each character is charged *50 and if there are more than 50 characters then the advertisement charge will be ₹500 plus ₹70 for each extra character.
 
 ```c
 #include <stdio.h>
@@ -860,14 +991,15 @@ int main() {
     int len;
 
     printf("Enter advertisement message: ");
-    scanf(" %[^\n]", msg); // Read full line
+    scanf(" %[^\n]", msg);
 
     len = strlen(msg);
 
-    if (len <= 50)
+    if (len <= 50) {
         printf("Bill: ₹%d\n", len * 50);
-    else
+    } else {
         printf("Bill: ₹%d\n", 500 + (len - 50) * 70);
+    }
 
     return 0;
 }
@@ -875,7 +1007,7 @@ int main() {
 
 ---
 
-## Q30. Analyze 10 Integers (Sum, Average, Count Above/Below Avg)
+## 30). Write a well-structured C program to accept 10 integers (+ve. -ve, zero). Find the sum of negative numbers, sum of positive numbers and print them. Also, find the average of all numbers and count of numbers above average and below average.
 
 ```c
 #include <stdio.h>
@@ -888,15 +1020,21 @@ int main() {
     for (int i = 0; i < 10; i++) {
         scanf("%d", &nums[i]);
         total += nums[i];
-        if (nums[i] > 0) posSum += nums[i];
-        else if (nums[i] < 0) negSum += nums[i];
+        if (nums[i] > 0) {
+            posSum += nums[i];
+        } else if (nums[i] < 0) {
+            negSum += nums[i];
+        }
     }
 
     avg = total / 10;
     int above = 0, below = 0;
     for (int i = 0; i < 10; i++) {
-        if (nums[i] > avg) above++;
-        else if (nums[i] < avg) below++;
+        if (nums[i] > avg) {
+            above++;
+        } else if (nums[i] < avg) {
+            below++;
+        }
     }
 
     printf("Positive sum: %d\nNegative sum: %d\nAverage: %.2f\nAbove average: %d\nBelow average: %d\n",
@@ -906,28 +1044,34 @@ int main() {
 }
 ```
 
-## Q31. Interchange Any Two Rows and Columns of a Matrix
+---
+
+## 31). Write a well-structured C program to accept a matrix and interchange any two rows and columns of a matrix.
 
 ```c
 #include <stdio.h>
 
 void readMatrix(int mat[10][10], int r, int c) {
     printf("Enter matrix (%d x %d):\n", r, c);
-    for (int i = 0; i < r; i++)
-        for (int j = 0; j < c; j++)
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++) {
             scanf("%d", &mat[i][j]);
+        }
+    }
 }
 
 void printMatrix(int mat[10][10], int r, int c) {
     for (int i = 0; i < r; i++) {
-        for (int j = 0; j < c; j++)
+        for (int j = 0; j < c; j++) {
             printf("%d ", mat[i][j]);
+        }
         printf("\n");
     }
 }
 
 int main() {
-    int mat[10][10], rows, cols;
+    int mat[10][10];
+    int rows, cols;
 
     printf("Enter number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
@@ -938,7 +1082,6 @@ int main() {
     printf("Enter two row indices to swap (0-based): ");
     scanf("%d %d", &row1, &row2);
 
-    // Swap rows
     for (int j = 0; j < cols; j++) {
         int temp = mat[row1][j];
         mat[row1][j] = mat[row2][j];
@@ -949,7 +1092,6 @@ int main() {
     printf("Enter two column indices to swap (0-based): ");
     scanf("%d %d", &col1, &col2);
 
-    // Swap columns
     for (int i = 0; i < rows; i++) {
         int temp = mat[i][col1];
         mat[i][col1] = mat[i][col2];
@@ -965,16 +1107,18 @@ int main() {
 
 ---
 
-## Q32. Find All Prime Numbers Between Two Integers Using `isprime()`
+## 32).Write a well-structured C program to accept 2 positive integers and find all prime numbers between them using a function, isprime(), which returns 1 if the number is prime, otherwise, returns zero.
 
 ```c
 #include <stdio.h>
 
 int isprime(int n) {
     if (n < 2) return 0;
-    for (int i = 2; i * i <= n; i++)
-        if (n % i == 0)
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
             return 0;
+        }
+    }
     return 1;
 }
 
@@ -985,9 +1129,11 @@ int main() {
     scanf("%d %d", &a, &b);
 
     printf("Prime numbers between %d and %d are:\n", a, b);
-    for (int i = a; i <= b; i++)
-        if (isprime(i))
+    for (int i = a; i <= b; i++) {
+        if (isprime(i)) {
             printf("%d ", i);
+        }
+    }
     printf("\n");
 
     return 0;
@@ -996,33 +1142,37 @@ int main() {
 
 ---
 
-## Q33. Sort Array in Ascending Order Using Function
+## 33). Write a well-structured C program to accept a one-dimensional array of integers and sort them in ascending order using function.
 
 ```c
 #include <stdio.h>
 
 void sortArray(int arr[], int size) {
-    for (int i = 0; i < size - 1; i++)
-        for (int j = i + 1; j < size; j++)
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = i + 1; j < size; j++) {
             if (arr[i] > arr[j]) {
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
+        }
+    }
 }
 
 int main() {
     int arr[5];
 
     printf("Enter 5 integers:\n");
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++) {
         scanf("%d", &arr[i]);
+    }
 
     sortArray(arr, 5);
 
     printf("Sorted array:\n");
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++) {
         printf("%d ", arr[i]);
+    }
     printf("\n");
 
     return 0;
@@ -1030,7 +1180,10 @@ int main() {
 ```
 
 ---
-### Q34. Infinite Series: e^x = 1 + x + x²/2! + x³/3! + ... up to n terms
+
+## 34). Write a well-structured C program to calculate the sum of following series using function.
+
+e = 1 - x/1! + x²/2! - x³/3! + ...
 
 ```c
 #include <stdio.h>
@@ -1038,15 +1191,17 @@ int main() {
 
 double factorial(int n) {
     double fact = 1;
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) {
         fact *= i;
+    }
     return fact;
 }
 
-double exp_series(double x, int n) {
-    double sum = 1.0; // First term is 1
-    for (int i = 1; i < n; i++) {
-        sum += pow(x, i) / factorial(i);
+double series_sum(double x, int n) {
+    double sum = 0;
+    for (int i = 0; i < n; i++) {
+        double term = pow(-1, i) * pow(x, i) / factorial(i);
+        sum += term;
     }
     return sum;
 }
@@ -1061,14 +1216,14 @@ int main() {
     printf("Enter number of terms: ");
     scanf("%d", &n);
 
-    printf("Approximate value of e^%.2f using %d terms = %.6f\n", x, n, exp_series(x, n));
+    printf("Sum of series: %.6f\n", series_sum(x, n));
     return 0;
 }
 ```
 
 ---
 
-## Q35. Sort Students by Name Alphabetically
+## 35). Write a well-structured C program to accept a list of N number of students with their names and roll numbers and sort it in alphabetical order.
 
 ```c
 #include <stdio.h>
@@ -1083,21 +1238,24 @@ int main() {
     struct Student s[5], temp;
 
     printf("Enter 5 student records (name and roll number):\n");
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++) {
         scanf("%s %d", s[i].name, &s[i].roll);
+    }
 
-    // Bubble sort by name
-    for (int i = 0; i < 4; i++)
-        for (int j = i + 1; j < 5; j++)
+    for (int i = 0; i < 4; i++) {
+        for (int j = i + 1; j < 5; j++) {
             if (strcmp(s[i].name, s[j].name) > 0) {
                 temp = s[i];
                 s[i] = s[j];
                 s[j] = temp;
             }
+        }
+    }
 
     printf("Students sorted alphabetically:\n");
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++) {
         printf("Name: %s, Roll: %d\n", s[i].name, s[i].roll);
+    }
 
     return 0;
 }
@@ -1105,7 +1263,7 @@ int main() {
 
 ---
 
-## Q36. Interchange 3rd and 4th Elements in Array
+## 36). Write a well-structured C program to accept an array and to interchange its 3rd element with the 4th element and finally prints the resultant array using function.
 
 ```c
 #include <stdio.h>
@@ -1124,14 +1282,16 @@ int main() {
     int arr[10];
 
     printf("Enter 10 integers:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++) {
         scanf("%d", &arr[i]);
+    }
 
     interchange(arr, 10);
 
     printf("Array after interchange:\n");
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++) {
         printf("%d ", arr[i]);
+    }
     printf("\n");
 
     return 0;
@@ -1140,7 +1300,7 @@ int main() {
 
 ---
 
-## Q37. Separate Odd and Even Numbers into Arrays
+## 37). Write a well-structured C program: to read a series of integer numbers. Read this numbers and then write all odd numbers to an array named ODD and all even numbers to an array EVEN. Use function to check even or odd.
 
 ```c
 #include <stdio.h>
@@ -1156,10 +1316,11 @@ int main() {
     while (1) {
         scanf("%d", &num);
         if (num < 0) break;
-        if (isEven(num))
+        if (isEven(num)) {
             even[e++] = num;
-        else
+        } else {
             odd[o++] = num;
+        }
     }
 
     printf("Odd numbers: ");
@@ -1174,7 +1335,9 @@ int main() {
 
 ---
 
-### ✅ Q38. Infinite Series: sin(x) = x - x³/3! + x⁵/5! - x⁷/7! + ...
+## 38). Write a well-structured C program to calculate the value of sin(x) for different values of x in degrees, using a function
+
+Sin(x) = x - x³/3! + x⁵/5! - x⁷/7! + ...
 
 ```c
 #include <stdio.h>
@@ -1182,8 +1345,9 @@ int main() {
 
 double factorial(int n) {
     double fact = 1;
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) {
         fact *= i;
+    }
     return fact;
 }
 
@@ -1204,7 +1368,7 @@ int main() {
     printf("Enter angle in degrees: ");
     scanf("%lf", &x_degrees);
 
-    x_radians = x_degrees * M_PI / 180; // Convert degrees to radians
+    x_radians = x_degrees * M_PI / 180;
 
     printf("Enter number of terms: ");
     scanf("%d", &n);
@@ -1217,11 +1381,9 @@ int main() {
 
 ---
 
+## 39). Write a well-structured C program to calculate the value of cos(x) for different values of x in degrees, using a function
 
----
-
-
-### ✅ Q39. Infinite Series: cos(x) = 1 - x²/2! + x⁴/4! - x⁶/6! + ...
+cos(x) = 1 - x²/2! + x⁴/4! - x⁶/6! + ...
 
 ```c
 #include <stdio.h>
@@ -1229,8 +1391,9 @@ int main() {
 
 double factorial(int n) {
     double fact = 1;
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) {
         fact *= i;
+    }
     return fact;
 }
 
@@ -1251,7 +1414,7 @@ int main() {
     printf("Enter angle in degrees: ");
     scanf("%lf", &x_degrees);
 
-    x_radians = x_degrees * M_PI / 180; // Convert degrees to radians
+    x_radians = x_degrees * M_PI / 180;
 
     printf("Enter number of terms: ");
     scanf("%d", &n);
@@ -1262,19 +1425,20 @@ int main() {
 }
 ```
 
-
 ---
 
-## Q40. Generate Prime Numbers Up to N
+## 40). Write a well-structured C program to generate prime numbers up to an integer N. Print also the number of prime numbers.
 
 ```c
 #include <stdio.h>
 
 int isPrime(int n) {
     if (n < 2) return 0;
-    for (int i = 2; i * i <= n; i++)
-        if (n % i == 0)
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
             return 0;
+        }
+    }
     return 1;
 }
 
@@ -1285,11 +1449,12 @@ int main() {
     scanf("%d", &n);
 
     printf("Prime numbers up to %d:\n", n);
-    for (int i = 2; i <= n; i++)
+    for (int i = 2; i <= n; i++) {
         if (isPrime(i)) {
             printf("%d ", i);
             count++;
         }
+    }
 
     printf("\nTotal primes: %d\n", count);
     return 0;
@@ -1298,26 +1463,30 @@ int main() {
 
 ---
 
-## Q41. Sort and Search Number in List
+## 41).Write a well-structured C program to input N followed by N non-repeated numbers (real or int), sort the numbers in ascending order using bubble sort, conduct a search for a given number and report success or failure. In case of success report number of occurrences
 
 ```c
 #include <stdio.h>
 
 void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++)
-        for (int j = 0; j < n - i - 1; j++)
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
+        }
+    }
 }
 
 int linearSearch(int arr[], int n, int key) {
     int count = 0;
-    for (int i = 0; i < n; i++)
-        if (arr[i] == key)
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
             count++;
+        }
+    }
     return count;
 }
 
@@ -1328,8 +1497,9 @@ int main() {
     scanf("%d", &n);
 
     printf("Enter %d numbers:\n", n);
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
+    }
 
     bubbleSort(arr, n);
 
@@ -1337,15 +1507,12 @@ int main() {
     scanf("%d", &key);
 
     int count = linearSearch(arr, n, key);
-    if (count > 0)
+    if (count > 0) {
         printf("Found %d occurrence(s)\n", count);
-    else
+    } else {
         printf("Not found\n");
+    }
 
     return 0;
 }
 ```
-
-
-
-
