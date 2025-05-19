@@ -1,8 +1,3 @@
-Okay, I understand! You want the **full, expanded depth** for **all modules** in a single, comprehensive Markdown block, ready to be copied and pasted.
-
-Here is the complete, in-depth content for all five modules, formatted in Markdown with code blocks where appropriate.
-
-```markdown
 ## 📘 Your C Programming Lab Exam Notes (Full Expanded Depth)
 
 These notes cover all five modules of your course structure, providing deeper theory, practical implications, key points, and code snippets relevant to your lab exam and viva.
