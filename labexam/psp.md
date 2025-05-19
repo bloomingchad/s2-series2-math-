@@ -906,3 +906,446 @@ int main() {
 }
 ```
 
+## Q31. Interchange Any Two Rows and Columns of a Matrix
+
+```c
+#include <stdio.h>
+
+void readMatrix(int mat[10][10], int r, int c) {
+    printf("Enter matrix (%d x %d):\n", r, c);
+    for (int i = 0; i < r; i++)
+        for (int j = 0; j < c; j++)
+            scanf("%d", &mat[i][j]);
+}
+
+void printMatrix(int mat[10][10], int r, int c) {
+    for (int i = 0; i < r; i++) {
+        for (int j = 0; j < c; j++)
+            printf("%d ", mat[i][j]);
+        printf("\n");
+    }
+}
+
+int main() {
+    int mat[10][10], rows, cols;
+
+    printf("Enter number of rows and columns: ");
+    scanf("%d %d", &rows, &cols);
+
+    readMatrix(mat, rows, cols);
+
+    int row1, row2;
+    printf("Enter two row indices to swap (0-based): ");
+    scanf("%d %d", &row1, &row2);
+
+    // Swap rows
+    for (int j = 0; j < cols; j++) {
+        int temp = mat[row1][j];
+        mat[row1][j] = mat[row2][j];
+        mat[row2][j] = temp;
+    }
+
+    int col1, col2;
+    printf("Enter two column indices to swap (0-based): ");
+    scanf("%d %d", &col1, &col2);
+
+    // Swap columns
+    for (int i = 0; i < rows; i++) {
+        int temp = mat[i][col1];
+        mat[i][col1] = mat[i][col2];
+        mat[i][col2] = temp;
+    }
+
+    printf("Matrix after swapping:\n");
+    printMatrix(mat, rows, cols);
+
+    return 0;
+}
+```
+
+---
+
+## Q32. Find All Prime Numbers Between Two Integers Using `isprime()`
+
+```c
+#include <stdio.h>
+
+int isprime(int n) {
+    if (n < 2) return 0;
+    for (int i = 2; i * i <= n; i++)
+        if (n % i == 0)
+            return 0;
+    return 1;
+}
+
+int main() {
+    int a, b;
+
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &a, &b);
+
+    printf("Prime numbers between %d and %d are:\n", a, b);
+    for (int i = a; i <= b; i++)
+        if (isprime(i))
+            printf("%d ", i);
+    printf("\n");
+
+    return 0;
+}
+```
+
+---
+
+## Q33. Sort Array in Ascending Order Using Function
+
+```c
+#include <stdio.h>
+
+void sortArray(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++)
+        for (int j = i + 1; j < size; j++)
+            if (arr[i] > arr[j]) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+}
+
+int main() {
+    int arr[5];
+
+    printf("Enter 5 integers:\n");
+    for (int i = 0; i < 5; i++)
+        scanf("%d", &arr[i]);
+
+    sortArray(arr, 5);
+
+    printf("Sorted array:\n");
+    for (int i = 0; i < 5; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+
+    return 0;
+}
+```
+
+---
+### Q34. Infinite Series: e^x = 1 + x + x²/2! + x³/3! + ... up to n terms
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+double factorial(int n) {
+    double fact = 1;
+    for (int i = 1; i <= n; i++)
+        fact *= i;
+    return fact;
+}
+
+double exp_series(double x, int n) {
+    double sum = 1.0; // First term is 1
+    for (int i = 1; i < n; i++) {
+        sum += pow(x, i) / factorial(i);
+    }
+    return sum;
+}
+
+int main() {
+    double x;
+    int n;
+
+    printf("Enter value of x: ");
+    scanf("%lf", &x);
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    printf("Approximate value of e^%.2f using %d terms = %.6f\n", x, n, exp_series(x, n));
+    return 0;
+}
+```
+
+---
+
+## Q35. Sort Students by Name Alphabetically
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct Student {
+    char name[50];
+    int roll;
+};
+
+int main() {
+    struct Student s[5], temp;
+
+    printf("Enter 5 student records (name and roll number):\n");
+    for (int i = 0; i < 5; i++)
+        scanf("%s %d", s[i].name, &s[i].roll);
+
+    // Bubble sort by name
+    for (int i = 0; i < 4; i++)
+        for (int j = i + 1; j < 5; j++)
+            if (strcmp(s[i].name, s[j].name) > 0) {
+                temp = s[i];
+                s[i] = s[j];
+                s[j] = temp;
+            }
+
+    printf("Students sorted alphabetically:\n");
+    for (int i = 0; i < 5; i++)
+        printf("Name: %s, Roll: %d\n", s[i].name, s[i].roll);
+
+    return 0;
+}
+```
+
+---
+
+## Q36. Interchange 3rd and 4th Elements in Array
+
+```c
+#include <stdio.h>
+
+void interchange(int arr[], int size) {
+    if (size >= 4) {
+        int temp = arr[2];
+        arr[2] = arr[3];
+        arr[3] = temp;
+    } else {
+        printf("Array has less than 4 elements.\n");
+    }
+}
+
+int main() {
+    int arr[10];
+
+    printf("Enter 10 integers:\n");
+    for (int i = 0; i < 10; i++)
+        scanf("%d", &arr[i]);
+
+    interchange(arr, 10);
+
+    printf("Array after interchange:\n");
+    for (int i = 0; i < 10; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+
+    return 0;
+}
+```
+
+---
+
+## Q37. Separate Odd and Even Numbers into Arrays
+
+```c
+#include <stdio.h>
+
+int isEven(int n) {
+    return n % 2 == 0;
+}
+
+int main() {
+    int num, odd[10], even[10], o = 0, e = 0;
+
+    printf("Enter integers (enter negative to stop):\n");
+    while (1) {
+        scanf("%d", &num);
+        if (num < 0) break;
+        if (isEven(num))
+            even[e++] = num;
+        else
+            odd[o++] = num;
+    }
+
+    printf("Odd numbers: ");
+    for (int i = 0; i < o; i++) printf("%d ", odd[i]);
+    printf("\nEven numbers: ");
+    for (int i = 0; i < e; i++) printf("%d ", even[i]);
+    printf("\n");
+
+    return 0;
+}
+```
+
+---
+
+### ✅ Q38. Infinite Series: sin(x) = x - x³/3! + x⁵/5! - x⁷/7! + ...
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+double factorial(int n) {
+    double fact = 1;
+    for (int i = 1; i <= n; i++)
+        fact *= i;
+    return fact;
+}
+
+double sin_series(double x, int n) {
+    double sum = 0;
+    for (int i = 0; i < n; i++) {
+        int exponent = 2 * i + 1;
+        double term = pow(-1, i) * pow(x, exponent) / factorial(exponent);
+        sum += term;
+    }
+    return sum;
+}
+
+int main() {
+    double x_degrees, x_radians;
+    int n;
+
+    printf("Enter angle in degrees: ");
+    scanf("%lf", &x_degrees);
+
+    x_radians = x_degrees * M_PI / 180; // Convert degrees to radians
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    double result = sin_series(x_radians, n);
+    printf("Approximate value of sin(%.2f°) = %.6f\n", x_degrees, result);
+    return 0;
+}
+```
+
+---
+
+
+---
+
+
+### ✅ Q39. Infinite Series: cos(x) = 1 - x²/2! + x⁴/4! - x⁶/6! + ...
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+double factorial(int n) {
+    double fact = 1;
+    for (int i = 1; i <= n; i++)
+        fact *= i;
+    return fact;
+}
+
+double cos_series(double x, int n) {
+    double sum = 0;
+    for (int i = 0; i < n; i++) {
+        int exponent = 2 * i;
+        double term = pow(-1, i) * pow(x, exponent) / factorial(exponent);
+        sum += term;
+    }
+    return sum;
+}
+
+int main() {
+    double x_degrees, x_radians;
+    int n;
+
+    printf("Enter angle in degrees: ");
+    scanf("%lf", &x_degrees);
+
+    x_radians = x_degrees * M_PI / 180; // Convert degrees to radians
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    double result = cos_series(x_radians, n);
+    printf("Approximate value of cos(%.2f°) = %.6f\n", x_degrees, result);
+    return 0;
+}
+```
+
+
+---
+
+## Q40. Generate Prime Numbers Up to N
+
+```c
+#include <stdio.h>
+
+int isPrime(int n) {
+    if (n < 2) return 0;
+    for (int i = 2; i * i <= n; i++)
+        if (n % i == 0)
+            return 0;
+    return 1;
+}
+
+int main() {
+    int n, count = 0;
+
+    printf("Enter upper limit: ");
+    scanf("%d", &n);
+
+    printf("Prime numbers up to %d:\n", n);
+    for (int i = 2; i <= n; i++)
+        if (isPrime(i)) {
+            printf("%d ", i);
+            count++;
+        }
+
+    printf("\nTotal primes: %d\n", count);
+    return 0;
+}
+```
+
+---
+
+## Q41. Sort and Search Number in List
+
+```c
+#include <stdio.h>
+
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++)
+        for (int j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+}
+
+int linearSearch(int arr[], int n, int key) {
+    int count = 0;
+    for (int i = 0; i < n; i++)
+        if (arr[i] == key)
+            count++;
+    return count;
+}
+
+int main() {
+    int n, arr[100], key;
+
+    printf("How many numbers? ");
+    scanf("%d", &n);
+
+    printf("Enter %d numbers:\n", n);
+    for (int i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+
+    bubbleSort(arr, n);
+
+    printf("Enter number to search: ");
+    scanf("%d", &key);
+
+    int count = linearSearch(arr, n, key);
+    if (count > 0)
+        printf("Found %d occurrence(s)\n", count);
+    else
+        printf("Not found\n");
+
+    return 0;
+}
+```
+
+
+
+
