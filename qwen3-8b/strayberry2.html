@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strawberry R Count</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: #FFB6C1;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #ffd1dc;
+      border-radius: 2.25rem;
+      padding-left: 35px;
+      padding-right: 35px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      width: 300px;
+      height: 220px;
+      z-index: 2;
+    }
+
+    .card h1 {
+      padding-top: 10%;
+      font-size: 2em;
+      color: #e63946;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      color: #4a235a;
+    }
+
+    .emoji-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 64px;
+      pointer-events: none;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🍓 Strawberry</h1>
+    <p>There are <span style="color: #e76f51; font-weight: bold;">3</span> "r" letters in "strawberry"!</p>
+  </div>
+
+  <!-- Emoji Background -->
+  <div class="emoji-bg" id="emoji-bg"></div>
+
+  <script>
+    const emojiBg = document.getElementById('emoji-bg');
+    const numEmojis = 20; // Adjust this number as needed
+    const emojis = ['🍓', '❤️', '🍑', '🍒'];//, '🫐', '🫐', '🫐', '🫐', '🫐', '🫐'];
+
+    for (let i = 0; i < numEmojis; i++) {
+      const emojiEl = document.createElement('div');
+      emojiEl.classList.add('emoji');
+
+      // Random emoji from the list
+      const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+      emojiEl.textContent = randomEmoji;
+
+      // Random rotation between 30° and 60°
+      const rotation = Math.random() * 30 + 30;
+      emojiEl.style.transform = `rotate(${rotation}deg)`;
+
+      // Random position within the viewport
+      const left = Math.random() * window.innerWidth;
+      const top = Math.random() * window.innerHeight;
+
+      emojiEl.style.left = `${left}px`;
+      emojiEl.style.top = `${top}px`;
+
+      // Optional: random animation speed
+      const duration = Math.random() * 15 + 10;
+      emojiEl.style.animation = `spin ${duration}s linear infinite`;
+
+      emojiBg.appendChild(emojiEl);
+    }
+  </script>
+
+</body>
+</html>
