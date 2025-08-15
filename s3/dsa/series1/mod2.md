@@ -22,6 +22,17 @@ A **Stack** is a data structure that follows the **LIFO (Last-In, First-Out)** p
 3.  **Decrement TOP:** `TOP = TOP - 1`.
 4.  Return `item`.
 
+#### Applications of Stacks
+*   **Expression Conversion:** Used to convert expressions from Infix to Postfix or Prefix.
+*   **Expression Evaluation:** Used to evaluate Postfix and Prefix expressions.
+*   **Function Calls (Call Stack):** Programming languages use a stack to manage function calls. When a function is called, it's pushed onto the stack; when it returns, it's popped off.
+*   **Recursion:** The call stack is essential for managing the state of recursive function calls.
+*   **Undo/Redo Operations:** In software like text editors, a stack can be used to keep track of recent actions, allowing the user to undo them.
+*   **Backtracking:** Used in algorithms that need to explore a path and "backtrack" if it's a dead end (e.g., solving a maze).
+*   **String Reversal:** Push each character of a string onto a stack, then pop them off to get the reversed string.
+
+---
+
 ### 2. The Queue
 
 A **Queue** follows the **FIFO (First-In, First-Out)** principle, like a line of people.
@@ -40,6 +51,15 @@ A **Queue** follows the **FIFO (First-In, First-Out)** principle, like a line of
 2.  **Get Element:** `item = QueueArray[FRONT]`.
 3.  **Increment FRONT:** `FRONT = FRONT + 1`.
 4.  Return `item`.
+
+#### Applications of Queues
+*   **Operating Systems:** Used for job scheduling (e.g., CPU scheduling, disk scheduling). Processes waiting for a resource are kept in a queue.
+*   **Printers:** Print jobs are added to a print queue in the order they are received.
+*   **Networking:** Data packets are often managed in queues in routers and switches to handle network congestion.
+*   **Breadth-First Search (BFS):** The BFS algorithm for traversing graphs and trees uses a queue.
+*   **Call Centers:** Phone systems use queues to hold calls for the next available service representative.
+
+---
 
 ### 3. Circular Queue
 
@@ -89,25 +109,12 @@ Instead of an array, we can use a linked list to implement a stack. This approac
 *   **Push** becomes "insert at the beginning" of the list.
 *   **Pop** becomes "delete from the beginning" of the list.
 
-#### Pseudocode
-**PUSH(item):**
-1.  Create a `newNode`.
-2.  Set `newNode.data = item`.
-3.  Set `newNode.next = head`.
-4.  Update the head: `head = newNode`.
-
-**POP():**
-1.  Check for underflow: IF `head == NULL`, print "Stack Underflow" and stop.
-2.  Store the head node: `temp = head`.
-3.  Move the head to the next node: `head = head.next`.
-4.  Free the stored node: `free(temp)`.
-
 #### Advantages of Linked List Stack over Array Stack
 | Feature | Array-based Stack | Linked List-based Stack (Advantage) |
 | :--- | :--- | :--- |
-| **Memory Allocation** | **Static.** Size is fixed at compile time. | **Dynamic.** Can grow or shrink at runtime as needed. |
-| **Overflow** | Can overflow if we exceed the pre-defined array size. | **No Overflow (Theoretically).** Overflow only occurs if the system runs out of memory, not due to a fixed size limit. |
-| **Memory Utilization**| May lead to wasted memory if the array is large but holds few elements. | **Efficient.** Memory is allocated only when a new element is pushed. |
+| **Memory Allocation** | **Static.** Size is fixed. | **Dynamic.** Can grow or shrink at runtime. |
+| **Overflow** | Can overflow if the array size is exceeded. | **No Overflow (Theoretically).** Overflow only if the system runs out of memory. |
+| **Memory Utilization**| Can waste memory if the array is large but holds few elements. | **Efficient.** Memory is allocated only when an element is pushed. |
 
 ---
 
@@ -162,7 +169,7 @@ Instead of an array, we can use a linked list to implement a stack. This approac
 
 ### Tutorial Problem 3: Convert `a+(b*c*(d/e^f)*g)*h`
 
-*(Note: The original expression `a+(b*c(d/e^f)*g)*h)` has a syntax error. Assuming the intended expression was `a+(b*c*(d/e^f)*g)*h`)*
+*(Note: Assuming the expression was `a+(b*c*(d/e^f)*g)*h`)*
 
 | Symbol | Stack | Output |
 | :--- | :--- | :--- |
