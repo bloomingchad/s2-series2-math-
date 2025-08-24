@@ -75,8 +75,15 @@ int main() {
                 pop();
             }
         } else {
-            while (!stackIsEmpty() && stack[top] != '(' && prece(current_char) <= prece(stack[top])) {
-                if (current_char == '^' && prece(current_char) == prece(stack[top])) {
+            while (
+                !stackIsEmpty()   &&
+                stack[top] != '(' && 
+                prece(current_char) <= prece(stack[top])
+            ) {
+                if (
+                    current_char == '^' &&
+                    prece(current_char) == prece(stack[top])
+                ) {
                     break;
                 }
                 append_to_result(pop());
